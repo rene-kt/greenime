@@ -128,6 +128,108 @@
                         align-items: center;
                     }
                     
+                    .section-animes {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #131219;
+                        overflow: hidden;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .subtitle {
+                        font-size: 20px;
+                        color: aliceblue;
+                        font-weight: 500;
+                    }
+                    
+                    .text-demo {
+                        font-size: 0.8rem;
+                        color: rgba(255, 255, 255, 0.8);
+                        font-style: italic;
+                    }
+                    
+                    .card-animes {
+                        display: grid;
+                        grid-template-columns: 350px;
+                        grid-template-rows: 400px 210px 50px;
+                        grid-template-areas: "image""text""stats";
+                        border-radius: 18px;
+                        background: #15141B;
+                        text-align: center;
+                        transition: 0.2s ease;
+                        cursor: pointer;
+                        margin: 10px;
+                        transition: 0.2s ease;
+                        color: white;
+                    }
+                    
+                    .card-animes-image {
+                        grid-area: image;
+                    }
+                    
+                    .card-animes-text {
+                        grid-area: text;
+                        margin: 25px;
+                    }
+                    
+                    .card-animes-stats {
+                        font-size: 10px;
+                        grid-area: stats;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        background: rgb(144, 6, 238);
+                    }
+                    
+                    .card-animes-stats .stat {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 10px;
+                        color: white;
+                    }
+                    
+                    .card-animes-stats .stat:hover {
+                        color: #131219;
+                    }
+                    
+                    .card-animes-stats .type {
+                        font-size: 11px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                    
+                    .card-animes-stats .value {
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+                    
+                    .card-animes-image {
+                        grid-area: image;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                    }
+                    
+                    .tecnology {
+                        color: rgb(144, 6, 238);
+                        font-size: 13px;
+                    }
+                    
+                    .card-animes-text p {
+                        color: grey;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                    
+                    .card-animes-text h2 {
+                        margin-top: 0px;
+                        font-size: 28px;
+                    }
+                    
                     @media only screen and (max-device-width: 1100px) {
                         .imgBx {
                             display: none;
@@ -149,7 +251,7 @@
                         body {
                             overflow-x: hidden;
                         }
-                        .section-projects {
+                        .section-animes {
                             display: block;
                             justify-content: center;
                             height: 100%;
