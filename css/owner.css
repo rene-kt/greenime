@@ -18,116 +18,6 @@
                         font-weight: 700;
                     }
                     
-                    .section-home {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #8524D1;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content h2 {
-                        color: #fff;
-                        font-size: 3em;
-                        font-weight: 800;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content strong {
-                        color: #8524D1;
-                        font-size: 1.3em;
-                        font-weight: 800;
-                    }
-                    
-                    .home-content .stars {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        margin-top: 20%;
-                    }
-                    
-                    .home-content .stars .item {
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
-                    
-                    .home-content .stars i {
-                        color: #8524D1;
-                        font-size: 1.2rem;
-                        padding-right: 5%;
-                    }
-                    
-                    .home-content .stars h3 {
-                        font-size: 1.2rem;
-                    }
-                    
-                    .home-content p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #8524D1;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .imgBx {
-                        position: relative;
-                        height: 80%;
-                        display: flex;
-                        justify-content: flex-end;
-                    }
-                    
-                    .about-section {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
                     .section-animes {
                         display: flex;
                         align-items: center;
@@ -181,7 +71,7 @@
                         grid-template-rows: 1fr;
                         border-bottom-left-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        background: rgb(144, 6, 238);
+                        background: #7579e7;
                     }
                     
                     .card-animes-stats .stat {
@@ -215,7 +105,7 @@
                     }
                     
                     .tecnology {
-                        color: rgb(144, 6, 238);
+                        color: #7579e7;
                         font-size: 13px;
                     }
                     
@@ -247,6 +137,17 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                    }
+                    
+                    .details {
+                        display: block;
+                    }
+                    
+                    .details h3 {
+                        color: #fff;
+                        letter-spacing: 1px;
+                        font-weight: 100;
+                        font-size: 1.3em;
                     }
                     
                     @media only screen and (max-device-width: 1100px) {

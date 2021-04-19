@@ -55,13 +55,6 @@
                         margin-bottom: 50px;
                     }
                     
-                    .home-content-naruto h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
-                    }
-                    
                     .home-content-naruto p {
                         color: #fff;
                         font-size: 1.2em;
@@ -84,7 +77,6 @@
                         position: relative;
                         display: flex;
                         width: 60%;
-                        justify-content: flex-end;
                     }
                     
                     .logo-image {
@@ -161,17 +153,6 @@
                         margin-bottom: 50px;
                     }
                     
-                    .home-content-death-note h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content-death-note .stars h3 {
-                        font-size: 1.2rem;
-                    }
-                    
                     .home-content-death-note p {
                         color: #fff;
                         font-size: 1.2em;
@@ -227,13 +208,6 @@
                         margin-bottom: 50px;
                     }
                     
-                    .home-content-one-piece h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
-                    }
-                    
                     .home-content-one-piece p {
                         color: #fff;
                         font-size: 1.2em;
@@ -282,13 +256,6 @@
                         box-sizing: border-box;
                     }
                     
-                    .home-content-toradora h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
-                    }
-                    
                     .home-content-toradora p {
                         color: #fff;
                         font-size: 1.2em;
@@ -313,6 +280,7 @@
                         box-sizing: border-box;
                         position: relative;
                         widows: 100%;
+                        width: 100%;
                         min-height: 100vh;
                         background: #131219;
                         display: flex;
@@ -335,13 +303,6 @@
                         position: relative;
                         padding: 100px 50px 100px 150px;
                         box-sizing: border-box;
-                    }
-                    
-                    .home-content-kaguya h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
                     }
                     
                     .home-content-kaguya p {
@@ -390,13 +351,6 @@
                         position: relative;
                         padding: 100px 50px 100px 150px;
                         box-sizing: border-box;
-                    }
-                    
-                    .home-content-promised h3 {
-                        color: aliceblue;
-                        font-size: 1.3em;
-                        font-weight: 100;
-                        margin-bottom: 50px;
                     }
                     
                     .home-content-promised p {
