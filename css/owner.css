@@ -71,7 +71,7 @@
                         grid-template-rows: 1fr;
                         border-bottom-left-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        background: #7579e7;
+                        background: #5aa897;
                     }
                     
                     .card-animes-stats .stat {
@@ -105,7 +105,7 @@
                     }
                     
                     .tecnology {
-                        color: #7579e7;
+                        color: #5aa897;
                         font-size: 13px;
                     }
                     
