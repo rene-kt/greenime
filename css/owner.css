@@ -18,6 +18,28 @@
                         font-weight: 700;
                     }
                     
+                    #myBtnContainer {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .btn {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #5aa897;
+                        text-transform: uppercase;
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 0.8em;
+                        font-weight: 700;
+                        margin: 10px;
+                    }
+                    
                     .section-animes {
                         display: flex;
                         align-items: center;
@@ -25,6 +47,18 @@
                         background-color: #131219;
                         overflow: hidden;
                         flex-wrap: wrap;
+                    }
+                    
+                    .hide {
+                        display: none !important;
+                    }
+                    
+                    .filterDiv {
+                        display: none;
+                    }
+                    
+                    .show {
+                        display: block;
                     }
                     
                     .subtitle {

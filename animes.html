@@ -70,14 +70,25 @@
     <!-- Cover da página -->
 
 
+
     <section id="animes">
         <div class="page-section">
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Todos</button>
+                <button class="btn " onclick="filterSelection('fantasia')"> Fantasia</button>
+                <button class="btn" onclick="filterSelection('aventura')"> Aventura</button>
+                <button class="btn" onclick="filterSelection('comedia')"> Comédia Romântica</button>
+                <button class="btn" onclick="filterSelection('slice')"> Slice of life</button>
+                <button class="btn" onclick="filterSelection('suspense')"> Suspense</button>
+            </div>
+
 
 
 
             <div class="section-animes">
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes hide suspense">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/death-note.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">MISTÉRIO/SUSPENSE</span>
@@ -96,7 +107,7 @@
                     </a>
                 </div>
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes fantasia hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/naruto.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">AVENTURA/FANTASIA/ARTES MARCIAIS</span>
@@ -113,7 +124,7 @@
                     </a>
                 </div>
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes fantasia aventura hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/one-piece.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">AVENTURA/FANTASIA</span>
@@ -131,7 +142,7 @@
 
 
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes comedia slice hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/toradora.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SLICE OF LIFE/COMÉDIA ROMÂNTICA</span>
@@ -148,7 +159,7 @@
                 </div>
 
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes comedia hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/kaguya-sama.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">COMÉDIA ROMÂNTICA</span>
@@ -164,7 +175,7 @@
                     </a>
                 </div>
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes fantasia suspense hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/promised-neverland.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SUSPENSE/FANTASIA/FICÇÃO CIENTÍFICA</span>
@@ -183,7 +194,7 @@
 
 
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes fantasia hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/madoka.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">FANTASIA</span>
@@ -199,7 +210,7 @@
                     </a>
                 </div>
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes magia hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/sailor.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">MAGIA</span>
@@ -215,7 +226,7 @@
                     </a>
                 </div>
 
-                <div class="card-animes" data-aos="fade-in" data-aos-duration="2000">
+                <div class="filterDiv card-animes shounen hide">
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/kimetsu.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SHOUNEN</span>
@@ -238,6 +249,57 @@
 
 
     <!-- Bootstrap core JavaScript -->
+
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+
+            for (i = 0; i < x.length; i++) {
+                w3AddClass(x[i], "hide");
+                if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "hide");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
 
     <script src="js/aos.js "></script>
     <script>
