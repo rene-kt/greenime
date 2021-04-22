@@ -295,7 +295,7 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background: #832a33;
+                        background: #C80202;
                         clip-path: circle(50% at 100% 80%);
                     }
                     
@@ -315,7 +315,7 @@
                         display: inline-block;
                         padding: 15px 30px;
                         margin-top: 20px;
-                        background: #832a33;
+                        background: #C80202;
                         color: #fff;
                         text-transform: uppercase;
                         text-decoration: none;
@@ -509,6 +509,149 @@
                         background: #b91e3e;
                         text-transform: uppercase;
                         color: #fff;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .section-home-orange {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-orange:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #518965;
+                        clip-path: circle(50% at 100% 80%);
+                    }
+                    
+                    .home-content-orange {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-orange p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-orange .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #518965;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .section-home-gata {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-gata:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #f3e8c2;
+                        clip-path: circle(50% at 100% 80%);
+                    }
+                    
+                    .home-content-gata {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-gata p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-gata .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #f3e8c2;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .section-home-loveu {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-loveu:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #ec6d75;
+                        clip-path: circle(50% at 100% 80%);
+                    }
+                    
+                    .home-content-loveu {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-loveu p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-loveu .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #ec6d75;
+                        color: #fff;
+                        text-transform: uppercase;
                         text-decoration: none;
                         font-size: 0.95em;
                         font-weight: 700;
