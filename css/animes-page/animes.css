@@ -534,7 +534,7 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background: #518965;
+                        background: #cc8d52;
                         clip-path: circle(50% at 100% 80%);
                     }
                     
@@ -554,7 +554,7 @@
                         display: inline-block;
                         padding: 15px 30px;
                         margin-top: 20px;
-                        background: #518965;
+                        background: #cc8d52;
                         color: #fff;
                         text-transform: uppercase;
                         text-decoration: none;
@@ -630,7 +630,7 @@
                         width: 100%;
                         height: 100%;
                         background: #ec6d75;
-                        clip-path: circle(50% at 100% 80%);
+                        clip-path: circle(55% at 100% 80%);
                     }
                     
                     .home-content-loveu {
@@ -650,6 +650,102 @@
                         padding: 15px 30px;
                         margin-top: 20px;
                         background: #ec6d75;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .section-home-charlotte {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-charlotte:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #ae4445;
+                        clip-path: circle(50% at 100% 80%);
+                    }
+                    
+                    .home-content-charlotte {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-charlotte p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-charlotte .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #ae4445;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .section-home-mirai-nikki {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-mirai-nikki:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #ffacbb;
+                        clip-path: circle(55% at 100% 80%);
+                    }
+                    
+                    .home-content-mirai-nikki {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-mirai-nikki p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-mirai-nikki .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #ffacbb;
                         color: #fff;
                         text-transform: uppercase;
                         text-decoration: none;
