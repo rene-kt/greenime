@@ -76,7 +76,7 @@
                     .card-animes {
                         display: grid;
                         grid-template-columns: 350px;
-                        grid-template-rows: 400px 210px 50px;
+                        grid-template-rows: 400px 220px 50px;
                         grid-template-areas: "image""text""stats";
                         border-radius: 18px;
                         background: #15141B;
