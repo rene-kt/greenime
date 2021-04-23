@@ -184,6 +184,16 @@
                         font-size: 1.3em;
                     }
                     
+                    .container-1 input#search {
+                        height: 6vh;
+                        background: #2b303b;
+                        border: none;
+                        font-size: 1.2em;
+                        width: 30vw;
+                        color: #fff;
+                        padding-left: 45px;
+                    }
+                    
                     @media only screen and (max-device-width: 1100px) {
                         .imgBx {
                             display: none;

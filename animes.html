@@ -39,7 +39,7 @@
 <body>
 
     <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#home">Anime Streaming</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,20 +48,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                    <li class="box container-1">
+
+                        <input class="" type="text" id="search" onkeyup="search()" placeholder="Pesquisar animes...">
+
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#skills">Animes</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contacts">Contato</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -75,15 +67,25 @@
         <div class="page-section">
 
             <div id="myBtnContainer">
+
+
                 <button class="btn active" onclick="filterSelection('all')">Todos</button>
                 <button class="btn " onclick="filterSelection('fantasia')"> Fantasia</button>
                 <button class="btn" onclick="filterSelection('aventura')"> Aventura</button>
                 <button class="btn" onclick="filterSelection('comedia')"> Comédia Romântica</button>
                 <button class="btn" onclick="filterSelection('slice')"> Slice of life</button>
                 <button class="btn" onclick="filterSelection('suspense')"> Suspense</button>
+                <button class="btn" onclick="filterSelection('acao')"> Ação</button>
+                <button class="btn" onclick="filterSelection('fantasia')"> Fantasia</button>
             </div>
 
 
+            <div class="box">
+                <div class="container-1">
+
+
+                </div>
+            </div>
 
 
             <div class="section-animes">
@@ -92,7 +94,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/death-note.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">MISTÉRIO/SUSPENSE</span>
-                        <h2>Death Note</h2>
+                        <h2 class="anime-name">Death Note</h2>
                         <p>
                             Um estudante de repente encontra um caderno que caiu do céu. Trata-se do Death Note, que permite ao seu portador matar qualquer pessoa a partir da mera anotação do nome do alvo em uma de suas páginas.
                         </p>
@@ -111,7 +113,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/naruto.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">AVENTURA/FANTASIA/ARTES MARCIAIS</span>
-                        <h2>Naruto Clássico</h2>
+                        <h2 class="anime-name">Naruto Clássico</h2>
                         <p>Naruto é um jovem órfão habitante da Vila da Folha que sonha se tornar o quinto Hokage, o maior guerreiro e governante da vila. Ao se graduar como ninja, descobre que tem um demônio raposa selado dentro de si.</p>
                     </div>
                     <a href="animes-pages/naruto.html">
@@ -128,7 +130,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/one-piece.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">AVENTURA/FANTASIA</span>
-                        <h2>One Piece</h2>
+                        <h2 class="anime-name">One Piece</h2>
                         <p>One Piece segue a história de um grupo de piratas liderado por Monkey D. Luffy. Luffy pretende se tornar o Rei dos Piratas e para isso deve encontrar o One Piece, tesouro misterioso capaz de torná-lo imbatível.</p>
                     </div>
                     <a href="animes-pages/one-piece.html">
@@ -146,7 +148,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/toradora.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SLICE OF LIFE/COMÉDIA ROMÂNTICA</span>
-                        <h2>Toradora!</h2>
+                        <h2 class="anime-name">Toradora!</h2>
                         <p>Taiga Aisaka e Ryuuji Takasu, dois colegas de classe que mal se conhecem e vivem em pé de gerra, até que um dia Taiga resolve declarar o seu amor por Yusaku Kitamura, melhor amigo de Takasu.</p>
                     </div>
                     <a href="animes-pages/toradora.html">
@@ -163,7 +165,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/kaguya-sama.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">COMÉDIA ROMÂNTICA</span>
-                        <h2>Kaguya Sama: Love is War</h2>
+                        <h2 class="anime-name">Kaguya Sama: Love is War</h2>
                         <p>Shinomiya Kaguya e Miyuki Shirogane são membros do Conselho Estudantil da Academia Shuchi'in. O tempo que eles passam juntos fez com que se apaixonassem</p>
                     </div>
                     <a href="animes-pages/kaguya-sama.html">
@@ -179,7 +181,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/promised-neverland.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SUSPENSE/FANTASIA/FICÇÃO CIENTÍFICA</span>
-                        <h2 style="font-size: 1.2em;">Yakusoku no Neverland <br>(The Promised Neverland)</h2>
+                        <h2 class="anime-name" style="font-size: 1.2em;">Yakusoku no Neverland <br>(The Promised Neverland)</h2>
                         <p>38 crianças levam uma vida quase perfeita no orfanato Casa Grace Field, sem nem imaginarem que coisas sombrias acontecem além dos muros do local.</p>
 
                     </div>
@@ -198,7 +200,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/madoka.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">FANTASIA</span>
-                        <h2>Madoka Magica</h2>
+                        <h2 class="anime-name">Madoka Magica</h2>
                         <p>Garotas recrutadas por um incubator, Kyubey, que em troca de um pedido realizado, elas se convertem em garotas mágicas para lutarem contra bruxas.</p>
                     </div>
                     <a href="animes-pages/madoka.html">
@@ -214,7 +216,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/sailor.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">MAGIA</span>
-                        <h2>Sailor Moon</h2>
+                        <h2 class="anime-name">Sailor Moon</h2>
                         <p> Usagi Tsukino, uma garota normal e inocente, que um dia encontra Luna, uma gata falante que revela a identidade de Usagi como "Sailor Moon", uma guerreira mágica destinada a salvar a Terra das forças do mal.</p>
                     </div>
                     <a href="animes-pages/sailor.html">
@@ -230,7 +232,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/kimetsu.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SHOUNEN</span>
-                        <h2>Kimetsu no Yaiba</h2>
+                        <h2 class="anime-name">Kimetsu no Yaiba</h2>
                         <p>Tanjiro, um jovem simples descobre que sua família foi massacrada por um demônio. E, ainda, Nezuko, sua irmã, única sobrevivente, também acabou transformada em um demônio.</p>
                     </div>
                     <a href="animes-pages/kimetsu.html">
@@ -246,7 +248,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/orange.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">SLICE OF LIFE</span>
-                        <h2>Orange</h2>
+                        <h2 class="anime-name">Orange</h2>
                         <p>Uma garota recebe uma carta dela mesma 10 anos no futuro, comentando todos os seus arrependimentos e o que deveria fazer de diferente para mudar uma possível tragédia que acontecerá no futuro.
                         </p>
                     </div>
@@ -264,7 +266,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/gata.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">COMÉDIA ROMÂNTICA</span>
-                        <h2>B Gata H Kei</h2>
+                        <h2 class="anime-name">B Gata H Kei</h2>
                         <p style="font-size: 0.72em">Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba
                             decidindo partir para cima de Kosuda Takashi, o qual ela considera mais fácil de conquistar.</p>
                     </div>
@@ -282,7 +284,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/loveu.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology">ROMANCE</span>
-                        <h2 style="font-size: 1.2em;">Suki-tte Ii na yo<br>(Say I Love U)</h2>
+                        <h2 class="anime-name" style="font-size: 1.2em;">Suki-tte Ii na yo<br>(Say I Love U)</h2>
 
                         <p>Esta história roda em torno de Tachibana Mei, uma garota que nunca fez amigos ou teve um namorado em 16 anos. Certo dia, ela acidentalmente esbarra em Kurosawa, o garoto mais popular do colégio.</p>
                     </div>
@@ -299,7 +301,7 @@
                     <div class="card-animes-image" style="background: url('imgs/animes-cards/charlotte.jpg'); background-size: cover;"></div>
                     <div class="card-animes-text">
                         <span class="tecnology"> COMÉDIA/VIDA ESCOLAR/SUPER-PODERES </span>
-                        <h2>Charlotte</h2>
+                        <h2 class="anime-name">Charlotte</h2>
 
                         <p>
 
@@ -321,7 +323,7 @@
                     <div class="card-animes-text">
                         <span class="tecnology">AVENTURA/SUSPENSE/AÇÃO/SOBRENATURAL
                         </span>
-                        <h2>Mirai Nikki</h2>
+                        <h2 class="anime-name">Mirai Nikki</h2>
 
                         <p>
 
@@ -342,7 +344,7 @@
                     <div class="card-animes-text">
                         <span class="tecnology">AÇÃO/FICÇÃO CIENTÍFICA/MECHA 
                         </span>
-                        <h2>Neon Genesis Evangelion</h2>
+                        <h2 class="anime-name">Neon Genesis Evangelion</h2>
 
                         <p>
                             Em um mundo pós-apocalíptico, uma organização paramilitar chamada NERV é criada para combater monstros chamados Anjos, utilizando seus EVA'S.
@@ -362,7 +364,7 @@
                     <div class="card-animes-text">
                         <span class="tecnology"> AVENTURA/DRAMA/FICÇÃO CIENTÍFICA/AÇÃO
                         </span>
-                        <h2>Cowboy Bepop</h2>
+                        <h2 class="anime-name">Cowboy Bepop</h2>
 
                         <p>
                             Jet Black, Faye Valentine e outros, a bordo de uma nave interestelar, têm seus olhos em uma recompensa lucrativa. No entanto, se eles querem obtê-la, eles devem transportar o homem responsável por liberar veneno em Marte.
@@ -377,6 +379,28 @@
                     </a>
                 </div>
 
+                <div class="filterDiv card-animes hide acao fantasia aventura">
+                    <div class="card-animes-image" style="background: url('imgs/animes-cards/sword.jpg'); background-size: cover;"></div>
+                    <div class="card-animes-text">
+                        <span class="tecnology"> AVENTURA/FANTASIA/FICÇÃO/AÇÃO
+                        </span>
+                        <h2 class="anime-name"> Sword Art Online</h2>
+                        <p>
+
+                            Kazuto “Kirito” Kirigaya entra em um MMORPG de realidade virtual, chamado de Sword Art Online. Não tem como escapar deste mundo a menos que o jogador complete o jogo; No entanto, um “game over” resulta na morte no jogador.
+
+                        </p>
+
+
+                    </div>
+                    <a href="animes-pages/sword.html">
+                        <div class=" card-animes-stats ">
+                            <div class="stat ">
+                                <div class="icon-box "><i class="fas fa-play fa-2x "></i></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
 
 
@@ -435,6 +459,28 @@
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
             });
+        }
+
+        function search() {
+            // Declare variables
+            var input, filter, itens, a, i, txtValue;
+            input = document.getElementById('search');
+            filter = input.value.toUpperCase();
+            itens = document.getElementsByClassName('filterDiv');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < itens.length; i++) {
+                a = itens[i].getElementsByClassName("anime-name")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    itens[i].style.display = "";
+
+                } else {
+                    itens[i].style.display = "none";
+
+
+                }
+            }
         }
     </script>
 
