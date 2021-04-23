@@ -753,6 +753,54 @@
                         font-weight: 700;
                     }
                     
+                    .section-home-evangelion {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        position: relative;
+                        widows: 100%;
+                        min-height: 100vh;
+                        background: #131219;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .section-home-evangelion:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #f56d25;
+                        clip-path: circle(55% at 100% 80%);
+                    }
+                    
+                    .home-content-evangelion {
+                        position: relative;
+                        padding: 100px 50px 100px 150px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .home-content-evangelion p {
+                        color: #fff;
+                        font-size: 1.2em;
+                    }
+                    
+                    .home-content-evangelion .botao {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #f56d25;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
                     .banner {
                         position: relative;
                         width: 100%;
