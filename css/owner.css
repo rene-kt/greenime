@@ -27,6 +27,34 @@
                         margin: 2%;
                     }
                     
+                    .list-episodes {
+                        width: 100%;
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50vh;
+                        margin-top: 3%;
+                        margin-left: 5%;
+                    }
+                    
+                    .list-episodes div {
+                        background-color: #242229;
+                        width: 90%;
+                        margin-top: 0.5%;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        color: grey;
+                        font-size: 1.2rem;
+                        flex-wrap: wrap;
+                        font-weight: 700;
+                        padding-left: 20px;
+                    }
+                    
+                    .list-episodes div:hover {
+                        background-color: #37343f;
+                        cursor: pointer;
+                    }
+                    
                     .btn {
                         position: relative;
                         display: inline-block;
@@ -90,7 +118,7 @@
                     }
                     
                     .favorite .heart i {
-                        color: #131219;
+                        color: #dc3545;
                     }
                     
                     .favorite .heart i:hover {
@@ -136,7 +164,7 @@
                     }
                     
                     .card-animes-stats .stat:hover {
-                        color: #131219;
+                        color: #dc3545;
                     }
                     
                     .card-animes-stats .type {

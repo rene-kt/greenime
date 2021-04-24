@@ -87,8 +87,8 @@
                 </div>
 
 
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
+                <a class="js-scroll-trigger" href="#episodes">
+                    <button class="botao"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
                 </a>
 
             </div>
@@ -97,10 +97,65 @@
 
             <div class="episode">
 
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <video class="video" src="../animes-episodes/naruto/1.mp4" controls="true"></video>
+                <img src="../imgs/close.png" class="close" onclick="toggleVideo1();">
             </div>
+
+            <div class="episode">
+
+                <video class="video" src="../animes-episodes/naruto/2.mp4" controls="true"></video>
+                <img src="../imgs/close.png" class="close" onclick="toggleVideo2();">
+            </div>
+
+
+            <div class="episode">
+
+                <video class="video" src="../animes-episodes/naruto/3.mp4" controls="true"></video>
+                <img src="../imgs/close.png" class="close" onclick="toggleVideo3();">
+            </div>
+
+
+            <div class="episode">
+
+                <video class="video" src="../animes-episodes/naruto/4.mp4" controls="true"></video>
+                <img src="../imgs/close.png" class="close" onclick="toggleVideo4();">
+            </div>
+
+
+            <div class="episode">
+
+                <video class="video" src="../animes-episodes/naruto/5.mp4" controls="true"></video>
+                <img src="../imgs/close.png" class="close" onclick="toggleVideo5();">
+            </div>
+
+
+
         </div>
+
+
+
+
+    </section>
+
+    <section class="list-episodes" id="episodes">
+
+
+        <div onclick="toggleVideo1();">
+            1 - Naruto Uzumaki chegando!
+        </div>
+        <div onclick="toggleVideo2();">
+            2 - Meu nome é Konohamaru!
+        </div>
+        <div onclick="toggleVideo3();">
+            3 - Sasuke e Sakura: amigos ou inimigos?
+        </div>
+        <div onclick="toggleVideo4();">
+            4 - Aprovado ou reprovado? Um teste de sobrevivência
+        </div>
+        <div onclick="toggleVideo5();">
+            5 - Você Falhou! A decisão final de Kakashi
+        </div>
+    </section>
 
 
     </section>
@@ -110,13 +165,59 @@
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
+        function toggleVideo1() {
+            const episode = document.getElementsByClassName('episode');
+            const video = document.getElementsByClassName('video');
 
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
+
+            video[0].currentTime = 0;
+            episode[0].classList.toggle('active')
+            video[0].pause();
+
+        }
+
+        function toggleVideo2() {
+            const episode = document.getElementsByClassName('episode');
+            const video = document.getElementsByClassName('video');
+
+
+            video[1].currentTime = 0;
+            episode[1].classList.toggle('active')
+            video[1].pause();
+
+        }
+
+        function toggleVideo3() {
+            const episode = document.getElementsByClassName('episode');
+            const video = document.getElementsByClassName('video');
+
+
+            video[2].currentTime = 0;
+            episode[2].classList.toggle('active')
+            video[2].pause();
+
+        }
+
+        function toggleVideo4() {
+            const episode = document.getElementsByClassName('episode');
+            const video = document.getElementsByClassName('video');
+
+
+            video[3].currentTime = 0;
+            episode[3].classList.toggle('active')
+            video[3].pause();
+
+        }
+
+        function toggleVideo5() {
+            const episode = document.getElementsByClassName('episode');
+            const video = document.getElementsByClassName('video');
+
+
+            video[4].currentTime = 0;
+            episode[4].classList.toggle('active')
+            video[4].pause();
+
         }
     </script>
     <script src="js/aos.js "></script>
@@ -126,16 +227,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>

@@ -93,13 +93,13 @@
 
                 </div>
 
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
+
+                <a class="js-scroll-trigger" href="#episodes">
+                    <button class="botao"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
                 </a>
 
             </div>
             <img class="death-nome-image" src="../imgs/animes-cover/kira.png">
-
 
 
 
@@ -111,40 +111,51 @@
         </div>
 
 
-    </section>
 
 
-    <!-- Bootstrap core JavaScript -->
 
 
-    <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
+        <!-- Bootstrap core JavaScript -->
 
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
-    </script>
-    <script src="js/aos.js "></script>
-    <script>
-        AOS.init({
-            once: true,
 
-        });
-    </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <script>
+            function toggleVideo() {
+                const episode = document.querySelector('.episode');
+                const video = document.querySelector('video');
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+                video.currentTime = 0;
+                episode.classList.toggle('active')
+                video.pause();
+            }
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
 
+            // End of use strict
+        </script>
+        <script src="js/aos.js "></script>
+        <script>
+            AOS.init({
+                once: true,
+
+            });
+        </script>
+        <script src="../js/creative.js">
+        </script>
+        <script src="../vendor/jquery/jquery.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+        <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+        <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="../js/creative.min.js"></script>
+
+        <script>
+        </script>
+</body>
+
+</html>
 
 </body>
 
