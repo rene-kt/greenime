@@ -89,6 +89,14 @@
                         color: white;
                     }
                     
+                    .favorite .heart i {
+                        color: #131219;
+                    }
+                    
+                    .favorite .heart i:hover {
+                        color: #fff;
+                    }
+                    
                     .card-animes-image {
                         grid-area: image;
                     }
