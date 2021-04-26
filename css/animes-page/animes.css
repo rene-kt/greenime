@@ -18,7 +18,7 @@
                         font-weight: 700;
                     }
                     
-                    .section-home-naruto {
+                    .section-animes {
                         padding: 0;
                         margin: 0;
                         box-sizing: border-box;
@@ -27,45 +27,60 @@
                         min-height: 100vh;
                         background: #131219;
                         display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        place-items: center;
                     }
                     
-                    .section-home-naruto:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    .box {
+                        width: 90%;
+                        background-color: #15141B;
+                        color: #fff;
+                        display: flex;
+                    }
+                    
+                    .info {
+                        display: block;
+                        padding: 2%;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                    }
+                    
+                    .info h2 {
+                        text-align: center;
+                    }
+                    
+                    hr.solid {
+                        border-top: 1px solid #bbb;
                         width: 100%;
-                        height: 100%;
-                        background: #8524D1;
-                        clip-path: circle(50% at 100% 80%);
+                        opacity: 0.2;
                     }
                     
-                    .home-content-naruto {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-naruto-naruto h2 {
-                        color: #fff;
-                        font-size: 3em;
-                        font-weight: 800;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content-naruto p {
-                        color: #fff;
+                    .info p {
                         font-size: 1.2em;
+                        margin: -10px;
                     }
                     
-                    .home-content-naruto .botao {
+                    .info p strong {
+                        font-size: 900;
+                    }
+                    
+                    .box .img-box {
+                        padding: 2%;
+                    }
+                    
+                    .box .img-box img {
+                        border: 2px solid #5aa897;
+                    }
+                    
+                    .box .img-box i {
+                        padding-right: 20px;
+                    }
+                    
+                    .box .img-box button {
                         position: relative;
                         display: inline-block;
                         padding: 15px 30px;
                         margin-top: 20px;
-                        background: #F99501;
+                        background: #5aa897;
                         color: #fff;
                         text-transform: uppercase;
                         text-decoration: none;
@@ -73,875 +88,55 @@
                         font-weight: 700;
                     }
                     
-                    .img-anime {
-                        position: relative;
-                        display: flex;
-                        width: 60%;
+                    .box .img-box img {
+                        width: 300px;
                     }
                     
-                    .logo-image {
-                        position: relative;
-                        display: flex;
-                        width: 80%;
-                        justify-content: flex-start;
-                    }
-                    
-                    .section-home-naruto {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-naruto:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #F99501!important;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-naruto {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .section-home-death-note {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-death-note:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #C80202;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-death-note {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-death-note-death-note h2 {
-                        color: #fff;
-                        font-size: 3em;
-                        font-weight: 800;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content-death-note p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-death-note .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #C80202;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
+                    .info .sinopse {
+                        color: grey;
+                        font-size: 0.9rem;
                         font-weight: 700;
+                        text-align: justify;
+                        margin-top: 5%;
                     }
                     
-                    .section-home-one-piece {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
+                    .list-episodes {
+                        width: 100%;
+                        display: block;
+                        justify-content: center;
                         align-items: center;
+                        height: 50vh;
+                        margin-top: 3%;
+                        margin-left: 5%;
                     }
                     
-                    .section-home-one-piece:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #3390FF;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-one-piece {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-naruto-naruto h2 {
+                    .list-episodes h2 {
+                        width: 90%;
+                        padding-left: 20px;
+                        background-color: #5aa897;
                         color: #fff;
-                        font-size: 3em;
-                        font-weight: 800;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .home-content-one-piece p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-one-piece .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #3390FF;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
                         font-weight: 700;
-                    }
-                    
-                    .section-home-toradora {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-toradora:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #82d0f5;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-toradora {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-toradora p {
-                        color: #fff;
                         font-size: 1.2em;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
                     }
                     
-                    .home-content-toradora .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #82d0f5;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
+                    .list-episodes div {
+                        background-color: #242229;
+                        width: 90%;
+                        margin-top: 0.5%;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        color: grey;
+                        font-size: 1rem;
+                        flex-wrap: wrap;
                         font-weight: 700;
+                        padding-left: 20px;
                     }
                     
-                    .section-home-kaguya {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        width: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-kaguya:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #C80202;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-kaguya {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-kaguya p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-kaguya .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #C80202;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-promised {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-promised:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #f2e7e6;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-promised {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-promised p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-promised .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #f2e7e6;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-madoka {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-madoka:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #fda1a5;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-madoka {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-madoka p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-madoka .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        color: #fff;
-                        background: #fda1a5;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-sailor {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-sailor:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #ff4184;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-sailor {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-sailor p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-sailor .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #ff4184;
-                        text-transform: uppercase;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-kimetsu {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-kimetsu:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #b91e3e;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-kimetsu {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-kimetsu p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-kimetsu .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #b91e3e;
-                        text-transform: uppercase;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-orange {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-orange:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #cc8d52;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-orange {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-orange p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-orange .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #cc8d52;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-gata {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-gata:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #f3e8c2;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-gata {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-gata p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-gata .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #f3e8c2;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-loveu {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-loveu:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #ec6d75;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-loveu {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-loveu p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-loveu .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #ec6d75;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-charlotte {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-charlotte:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #ae4445;
-                        clip-path: circle(50% at 100% 80%);
-                    }
-                    
-                    .home-content-charlotte {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-charlotte p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-charlotte .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #ae4445;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-mirai-nikki {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-mirai-nikki:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #ffacbb;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-mirai-nikki {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-mirai-nikki p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-mirai-nikki .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #ffacbb;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-evangelion {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-evangelion:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #f56d25;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-evangelion {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-evangelion p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-evangelion .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #f56d25;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-cowboy {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-cowboy:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #f7d36f;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-cowboy {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-cowboy p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-cowboy .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #f7d36f;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-sword {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-sword:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #2596be;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-sword {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-sword p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-sword .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #2596be;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .section-home-haikyu {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        min-height: 100vh;
-                        background: #131219;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .section-home-haikyu:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: #e76b0f;
-                        clip-path: circle(55% at 100% 80%);
-                    }
-                    
-                    .home-content-haikyu {
-                        position: relative;
-                        padding: 100px 50px 100px 150px;
-                        box-sizing: border-box;
-                    }
-                    
-                    .home-content-haikyu p {
-                        color: #fff;
-                        font-size: 1.2em;
-                    }
-                    
-                    .home-content-haikyu .botao {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #e76b0f;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
+                    .list-episodes div:hover {
+                        background-color: #37343f;
+                        cursor: pointer;
                     }
                     
                     .banner {
@@ -1005,28 +200,20 @@
                     }
                     
                     @media only screen and (max-device-width: 800px) {
-                        .home-content-naruto {
-                            position: relative;
-                            width: 100%;
-                            padding-left: 30px;
-                        }
-                        .section-home:before {
-                            display: none;
-                        }
-                        .imgBx {
-                            display: none;
-                        }
-                        body {
-                            overflow-x: hidden;
-                        }
-                        .section-animes {
+                        .anime-card {
                             display: block;
+                            align-items: center;
                             justify-content: center;
-                            height: 100%;
+                            width: 80%;
+                            background-color: #222222;
                         }
-                        .title-project {
-                            font-weight: 800;
-                            color: #fff;
-                            letter-spacing: 1;
+                        .anime-card .anime-image {
+                            padding-top: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .anime-card .anime-image img {
+                            border: 2px solid #5aa897;
                         }
                     }

@@ -27,34 +27,6 @@
                         margin: 2%;
                     }
                     
-                    .list-episodes {
-                        width: 100%;
-                        display: block;
-                        justify-content: center;
-                        align-items: center;
-                        height: 50vh;
-                        margin-top: 3%;
-                        margin-left: 5%;
-                    }
-                    
-                    .list-episodes div {
-                        background-color: #242229;
-                        width: 90%;
-                        margin-top: 0.5%;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        color: grey;
-                        font-size: 1.2rem;
-                        flex-wrap: wrap;
-                        font-weight: 700;
-                        padding-left: 20px;
-                    }
-                    
-                    .list-episodes div:hover {
-                        background-color: #37343f;
-                        cursor: pointer;
-                    }
-                    
                     .btn {
                         position: relative;
                         display: inline-block;
@@ -230,13 +202,13 @@
                         font-size: 1.3em;
                     }
                     
-                    .container-1 input#search {
+                    #search {
                         height: 6vh;
                         background: #2b303b;
                         border: none;
                         font-size: 1.2em;
-                        width: 30vw;
                         color: #fff;
+                        width: 30vw;
                         padding-left: 45px;
                         float: right;
                     }
@@ -248,28 +220,19 @@
                     }
                     
                     @media only screen and (max-device-width: 800px) {
-                        .home-content {
-                            position: relative;
+                        #search {
+                            height: 6vh;
+                            background: #2b303b;
+                            border: none;
+                            font-size: 1.2em;
+                            color: #fff;
                             width: 100%;
-                            padding-left: 30px;
-                        }
-                        .section-home:before {
-                            display: none;
-                        }
-                        .imgBx {
-                            display: none;
-                        }
-                        body {
-                            overflow-x: hidden;
+                            padding-left: 45px;
+                            float: right;
                         }
                         .section-animes {
                             display: block;
                             justify-content: center;
-                            height: 100%;
-                        }
-                        .title-project {
-                            font-weight: 800;
-                            color: #fff;
-                            letter-spacing: 1;
+                            align-items: center;
                         }
                     }
