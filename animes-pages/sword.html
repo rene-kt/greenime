@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Sword Art Online</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,18 +25,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .sword-image {
-            position: relative;
-            display: flex;
-            width: 70%;
-            margin-top: auto;
-        }
-    </style>
+
+
 
 </head>
 
@@ -72,62 +67,66 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-sword">
-            <div class="home-content-sword">
+    <section class="section-animes">
 
 
-                <img class="logo-image" style="width: 60%" src="../imgs/animes-logos/sword-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-                <div class="details">
-
-
-
-
-                    <h3>Criador: Kawahara Reki, Dengeki Bunko</h3>
-                    <h3>Diretor: Itou Tomohiko</h3>
-                    <h3>Gênero: Aventura, Drama, Ficção Cientifica, Ação</h3>
-                    <h3>Estúdio: A-1 Pictures
-                    </h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 2</h3>
-
-                </div>
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/sword.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="sword-image" src="../imgs/animes-cover/sword.png">
 
+            <div class="info">
 
+                <h2>Sword Art Online</h2>
 
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Ação , Aventura , Fantasia , Jogo , romântico, Shounen</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong>Kawahara Reki, Dengeki Bunko</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Itou Tomohiko</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> A-1 Pictures</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 25</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 1</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 1</p>
 
-            <div class="episode">
-
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p class="sinopse">
+                    Sword Art Online – Um jovem chamado Kazuto “Kirito” Kirigaya, entra em um MMORPG de realidade virtual, um mundo online chamado de Sword Art Online. Não tem como escapar deste mundo a menos que o jogador complete o jogo; No entanto, um “game over” resulta
+                    na morte no jogador.
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -136,16 +135,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
