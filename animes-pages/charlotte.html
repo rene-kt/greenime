@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Charlotte</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -28,14 +29,7 @@
     <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .charlotte-image {
-            position: relative;
-            display: flex;
-            margin-top: auto;
-            width: 45%;
-        }
-    </style>
+
 
 
 </head>
@@ -73,58 +67,71 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-charlotte">
-            <div class="home-content-charlotte">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/charlotte-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-
-                <div class="details">
-
-                    <h3>Criador: Maeda Jun</h3>
-                    <h3>Diretor: Yoshiyuki Asai</h3>
-                    <h3>Gênero: Vida Escolar, Drama , Super-poderes</h3>
-                    <h3>Estúdio: Studio P.A. Works</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 13</h3>
-
-                </div>
-
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/charlotte.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="charlotte-image " src="../imgs/animes-cover/charlotte.png">
+
+            <div class="info">
+                <h2>Charlotte</h2>
 
 
-            <div class="episode">
 
-                <video src="../animes-episodes/charlotte-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Vida Escolar, Drama, Super-poderes</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong> Maeda Jun</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Yoshiyuki Asai</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> Studio P.A. Works</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 13</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
+
+                <p class="sinopse">
+                    “Charlotte” será a segunda animação original a ser produzida pelo estúdio P.A. Works em parceria com Jun Maeda – a primeira foi “Angel Beats!”, em 2010. a história é centrada nas habilidades especiais que uma pequena porcentagem de garotos e garotas adquire
+                    na puberdade. O protagonista Yuu Otosaka é um jovem que usa seus poderes sem o conhecimento dos outros, e fora isso ele leva uma vida escolar normal, entretanto, após conhecer uma garota de nome Nao Tomori, o destino dos usuários de
+                    poderes especiais será exposto.
+
+                </p>
+
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -133,16 +140,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
