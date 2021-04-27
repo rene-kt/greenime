@@ -4,6 +4,12 @@
                         background-color: #131219;
                     }
                     
+                    html,
+                    body {
+                        max-width: 100%;
+                        overflow-x: hidden;
+                    }
+                    
                     li {
                         list-style: none;
                     }
@@ -46,6 +52,7 @@
                     
                     .info h2 {
                         text-align: center;
+                        text-transform: uppercase;
                     }
                     
                     hr.solid {
@@ -212,6 +219,11 @@
                     }
                     
                     @media only screen and (max-device-width: 800px) {
+                        html,
+                        body {
+                            max-width: 100%;
+                            overflow-x: hidden;
+                        }
                         .box {
                             width: 90%;
                             display: block;
@@ -224,6 +236,10 @@
                         .info p {
                             margin-left: auto;
                             margin-right: auto;
+                            margin-top: 5%;
+                        }
+                        .info .sinopse {
+                            padding-bottom: 5%;
                         }
                         .box .img-box {
                             display: block;
