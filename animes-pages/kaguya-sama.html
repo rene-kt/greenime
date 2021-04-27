@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Naruto</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,19 +25,11 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
 
-    <style>
-        .kaguya-image {
-            position: relative;
-            width: 80%;
-            margin-top: auto;
-            margin-left: auto;
-        }
-    </style>
 
 
 </head>
@@ -74,94 +67,76 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-kaguya">
-            <div class="home-content-kaguya">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/kaguya-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-
-                <div class="details">
-
-                    <h3>Criador: Aka Akasaka</h3>
-                    <h3>Diretor: Mamoru Hatakeyama</h3>
-                    <h3>Gênero: Comédia Romântica</h3>
-                    <h3>Estúdio: A-1 Pictures</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 12</h3>
-
-                </div>
-
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/kaguya-sama.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="kaguya-image" src="../imgs/animes-cover/kaguya-sama.png">
+
+            <div class="info">
+
+                <h2>KAGUYA-SAMA: LOVE IS WAR</h2>
 
 
-            <div class="episode">
+                <h3></h3>
 
-                <video class="video" src="../animes-episodes/kaguya/1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo1();">
-            </div>
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Comédia, Escolar, Psicológico, Romance, Seinen</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong> Aka Akasaka</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Hayato Date</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> A-1 Picturest</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 12</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
 
-            <div class="episode">
-
-                <video class="video" src="../animes-episodes/kaguya/2.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo2();">
-            </div>
-
-
-            <div class="episode">
-
-                <video class="video" src="../animes-episodes/kaguya/3.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo3();">
+                <p class="sinopse">
+                    Veio de boa família? Sim! Tem uma personalidade promissora? Sim! Todos os jovens de elite com futuros brilhantes acabam indo parar na Academia Shuchiin. E ambos os líderes do conselho estudantil, Kaguya Shinomiya e Miyuki Shirogane, estão apaixonados
+                    um pelo outro. Mas seis meses se passaram e nada aconteceu?! Ambos são orgulhosos demais para confessar seu amor. Esse orgulho só piorou com o tempo, e agora ambos estão brigando pra ver quem faz o outro se declarar primeiro! A parte
+                    mais divertida do amor é o jogo da conquista! Uma nova comédia romântica, sobre as batalhas intelectuais de dois estudantes de elite apaixonados.
+                </p>
             </div>
 
 
-            <div class="episode">
-
-                <video class="video" src="../animes-episodes/kaguya/4.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo4();">
-            </div>
 
 
-            <div class="episode">
 
-                <video class="video" src="../animes-episodes/kaguya/5.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo5();">
-            </div>
+
+
         </div>
-
-
-
-
-        <section class="list-episodes" id="episodes">
-
-
-            <div onclick="toggleVideo1();">
-                Kaguya Sama: Love is War - Episódio 01
-            </div>
-            <div onclick="toggleVideo2();">
-                Kaguya Sama: Love is War - Episódio 02
-            </div>
-            <div onclick="toggleVideo3();">
-                Kaguya Sama: Love is War - Episódio 03
-            </div>
-            <div onclick="toggleVideo4();">
-                Kaguya Sama: Love is War - Episódio 04
-            </div>
-            <div onclick="toggleVideo5();">
-                Kaguya Sama: Love is War - Episódio 05
-            </div>
-        </section>
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <div onclick="toggleVideo1();">
+            Kaguya-Sama: Love is War - Episódio 1
+        </div>
+        <div onclick="toggleVideo2();">
+            Kaguya-Sama: Love is War - Episódio 2
+        </div>
+        <div onclick="toggleVideo3();">
+            Kaguya-Sama: Love is War - Episódio 3
+        </div>
+        <div onclick="toggleVideo4();">
+            Kaguya-Sama: Love is War - Episódio 4
+        </div>
+        <div onclick="toggleVideo5();">
+            Kaguya-Sama: Love is War - Episódio 5
+        </div>
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
@@ -229,16 +204,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
