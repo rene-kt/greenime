@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Sailor Moon</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,18 +25,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .orange-image {
-            position: relative;
-            display: flex;
-            width: 35%;
-            margin-top: auto;
-        }
-    </style>
+
+
 
 </head>
 
@@ -72,58 +67,70 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-orange">
-            <div class="home-content-orange">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/orange-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-                <div class="details">
-
-                    <h3>Criador: Sukehiro Tomita</h3>
-                    <h3>Diretor: Munehisa Sakai</h3>
-                    <h3>Gênero: Magia</h3>
-                    <h3>Estúdio: Toei Animation</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 46</h3>
-
-                </div>
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/sailor.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="orange-image" src="../imgs/animes-cover/orange.png">
+
+            <div class="info">
+                <h2>Sailor Moon</h2>
 
 
 
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Aventura, Magia, Shoujo, Demônios, Vida Escolar, Romance, Comédia, Magia, Mahou Shoujo, Adaptação de Manga, Super Poderes</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong> Naoko Takeuchi</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Junichiro Sato – Kunihiko Ikuhara – Takuya Igarashi</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> Estúdio Toei Animation</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 46</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
 
-            <div class="episode">
-
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p class="sinopse">
+                    Em Tóquio, Usagi Tsukino é uma garota chorona, comilona e comum. Em um certo dia, no caminho para a escola, ela encontra um grupo de garotos batendo em uma gata de rua. Usagi salva a gata e tira um curativo da testa dela que escondia uma meia-lua. Mais
+                    tarde a gatinha aparece no quarto de Usagi e começa a falar com ela, apresenta-se como Lua e lhe entrega uma missão: a de ser uma Sailor guerreira, defensora do bem, destinada a enfrentar demonios e se unir com outras sailors para
+                    encontrar a Princesa da Lua que habita a terra. Usagi recebe um broche especial que a transforma na guerreira Sailor Moon quando ela grita “Pelo poder do Prisma Lunar”. Sua arma especial é a Tiara Lunar, a qual ela lança dizendo “Tiara
+                    Lunar, ação”. Mais tarde Lua lhe da uma caneta que lhe permite se transformar em qualquer tipo de profissional, basta dizer “poder lunar”
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -132,16 +139,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
