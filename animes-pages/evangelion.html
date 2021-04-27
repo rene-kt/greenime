@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Neon Genesis Evangelion</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,18 +25,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .evangelion-image {
-            position: relative;
-            display: flex;
-            width: 65%;
-            margin-top: auto;
-        }
-    </style>
+
+
 
 </head>
 
@@ -72,62 +67,69 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-evangelion">
-            <div class="home-content-evangelion">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/evangelion-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-                <div class="details">
-
-
-
-
-                    <h3>Criador: Yoshiyuki Sadamoto</h3>
-                    <h3>Diretor: Hideaki Anno</h3>
-                    <h3>Gênero: Ação, Drama, Ficção Cientifica, Seinen, Mecha, Suspense</h3>
-                    <h3>Estúdio: GAINAX Tatsunoko
-                    </h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 14</h3>
-
-                </div>
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/evangelion.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="evangelion-image" src="../imgs/animes-cover/evangelion.png">
+
+            <div class="info">
+                <h2>Neon Genesis Evangelion</h2>
 
 
 
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong>Ação, Drama, Ficção Cientifica, Seinen, Mecha, Suspense</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong> Yoshiyuki Sadamoto</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Hideaki Anno</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong>GAINAX Tatsunoko</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 14</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
 
-            <div class="episode">
+                <p class="sinopse">
+                    Neon Genesis Evangelion é uma série de ação pós-apocalíptica que gira em torno de uma organização paramilitar chamada NERV, criada para combater seres monstruosos e misteriosos conhecidos como Anjos, utilizando armas de combate biomecânicas humanoides
+                    gigantes conhecidas como Unidades Evangelion (ou EVAs).
 
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -136,16 +138,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
