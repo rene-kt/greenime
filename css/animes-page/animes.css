@@ -121,6 +121,24 @@
                         padding-bottom: 5px;
                     }
                     
+                    .list-episodes h4 {
+                        background-color: #242229;
+                        width: 90%;
+                        margin-top: 0.5%;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        color: grey;
+                        font-size: 1rem;
+                        flex-wrap: wrap;
+                        font-weight: 700;
+                        padding-left: 20px;
+                    }
+                    
+                    .list-episodes a {
+                        color: #5aa897;
+                        text-decoration: none;
+                    }
+                    
                     .list-episodes div {
                         background-color: #242229;
                         width: 90%;
