@@ -71,7 +71,7 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/death-note.jpg">
-                <button><i class="fas fa-heart"></i>FAVORITAR</button>
+                <button id="button" class="botao" onclick="addFavorite('button')"><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
 
@@ -126,15 +126,13 @@
 
     <!-- Bootstrap core JavaScript -->
 
-
     <script>
+        $(".favorite-button").click(function() {
+            $(this).toggleClass("active");
+        });
     </script>
     <script src="js/aos.js "></script>
     <script>
-        AOS.init({
-            once: true,
-
-        });
     </script>
     <script src="../js/creative.js">
     </script>
@@ -148,7 +146,6 @@
     <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/creative.min.js "></script>
 
 
 </body>

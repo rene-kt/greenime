@@ -1,3 +1,19 @@
+function addFavorite(idName) {
+
+    if (document.getElementById(idName).classList.contains('favorite')) {
+
+        document.getElementById(idName).classList.remove('favorite');
+        document.getElementById(idName).classList.add('botao');
+
+
+
+
+    } else {
+        document.getElementById(idName).classList.remove('botao');
+        document.getElementById(idName).classList.add('favorite');
+    }
+
+}
 (function($) {
     "use strict"; // Start of use strict
 
