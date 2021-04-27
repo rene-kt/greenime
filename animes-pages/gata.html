@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>B Gata H Kei</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,18 +25,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .gata-image {
-            position: relative;
-            display: flex;
-            width: 45%;
-            margin-top: auto;
-        }
-    </style>
+
+
 
 </head>
 
@@ -72,58 +67,67 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-gata">
-            <div class="home-content-gata">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/gata.png">
+        <div class="box">
+            <div class="img-box">
 
-                <div class="details">
-
-                    <h3>Criador: Yōko Sanri</h3>
-                    <h3>Diretor: Yusuke Yamamoto</h3>
-                    <h3>Gênero: Comédia Romântica , Ecchi , Seinen , Vida Escolar</h3>
-                    <h3>Estúdio: Hal Film Maker</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 12</h3>
-
-                </div>
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/gata.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="gata-image" src="../imgs/animes-cover/gata.png">
+
+            <div class="info">
+                <h2>B Gata H Kei</h2>
 
 
 
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong>Comédia Romântica , Ecchi , Seinen , Vida Escolar</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong> Yōko Sanri</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Yusuke Yamamoto</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong>Hal Film Maker</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 12</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
 
-            <div class="episode">
-
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p class="sinopse">Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba decidindo
+                    partir para cima de Kosuda Takashi, o qual ela considera mais fácil de conquistar.
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -132,16 +136,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
