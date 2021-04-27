@@ -1,238 +1,255 @@
-                    body {
-                        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        overflow-x: hidden;
-                        background-color: #131219;
-                    }
-                    
-                    li {
-                        list-style: none;
-                    }
-                    
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        font-weight: 700;
-                    }
-                    
-                    #myBtnContainer {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        overflow: hidden;
-                        flex-wrap: wrap;
-                        margin: 2%;
-                    }
-                    
-                    .btn {
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #5aa897;
-                        text-transform: uppercase;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 0.8em;
-                        font-weight: 700;
-                        margin: 10px;
-                    }
-                    
-                    .section-animes {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #131219;
-                        overflow: hidden;
-                        flex-wrap: wrap;
-                    }
-                    
-                    .hide {
-                        display: none !important;
-                    }
-                    
-                    .filterDiv {
+                body {
+                    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    overflow-x: hidden;
+                    background-color: #131219;
+                }
+                
+                li {
+                    list-style: none;
+                }
+                
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-weight: 700;
+                }
+                
+                #myBtnContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    flex-wrap: wrap;
+                    margin: 2%;
+                }
+                
+                input:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+                
+                .dropdown-item:hover {
+                    cursor: pointer;
+                }
+                
+                .btn {
+                    position: relative;
+                    display: inline-block;
+                    padding: 15px 30px;
+                    margin-top: 20px;
+                    background: #5aa897;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 0.8em;
+                    font-weight: 700;
+                    margin: 10px;
+                }
+                
+                .section-animes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #131219;
+                    overflow: hidden;
+                    flex-wrap: wrap;
+                }
+                
+                .hide {
+                    display: none !important;
+                }
+                
+                .filterDiv {
+                    display: none;
+                }
+                
+                .show {
+                    display: block;
+                }
+                
+                .subtitle {
+                    font-size: 20px;
+                    color: aliceblue;
+                    font-weight: 500;
+                }
+                
+                .text-demo {
+                    font-size: 0.8rem;
+                    color: rgba(255, 255, 255, 0.8);
+                    font-style: italic;
+                }
+                
+                .card-animes {
+                    display: grid;
+                    grid-template-columns: 350px;
+                    grid-template-rows: 400px 220px 70px;
+                    grid-template-areas: "image""text""stats";
+                    border-radius: 18px;
+                    background: #15141B;
+                    text-align: center;
+                    transition: 0.2s ease;
+                    cursor: pointer;
+                    margin: 10px;
+                    transition: 0.2s ease;
+                    color: white;
+                }
+                
+                .favorite .heart i {
+                    color: #dc3545;
+                }
+                
+                .favorite .heart i:hover {
+                    color: #fff;
+                }
+                
+                .card-animes-image {
+                    grid-area: image;
+                }
+                
+                .card-animes-text {
+                    grid-area: text;
+                    margin: 25px;
+                }
+                
+                .card-animes-stats {
+                    font-size: 10px;
+                    grid-area: stats;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    background: #5aa897;
+                }
+                
+                .card-animes-stats .stat {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 10px;
+                    color: white;
+                    margin: 10px;
+                }
+                
+                .card-animes-stats .stat a {
+                    color: white;
+                }
+                
+                .card-animes-stats .stat a:hover {
+                    color: #131219;
+                }
+                
+                .card-animes-stats .stat:hover {
+                    color: #dc3545;
+                }
+                
+                .card-animes-stats .type {
+                    font-size: 11px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                
+                .card-animes-stats .value {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                
+                .card-animes-image {
+                    grid-area: image;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+                
+                .tecnology {
+                    color: #5aa897;
+                    font-size: 13px;
+                }
+                
+                .card-animes-text p {
+                    color: grey;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                
+                .card-animes-text h2 {
+                    margin-top: 0px;
+                    font-size: 28px;
+                }
+                
+                .banner {
+                    position: relative;
+                    width: 100%;
+                    min-height: 100vh;
+                    padding: 0 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .banner .banner-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .details {
+                    display: block;
+                }
+                
+                .details h3 {
+                    color: #fff;
+                    letter-spacing: 1px;
+                    font-weight: 100;
+                    font-size: 1.3em;
+                }
+                
+                #search {
+                    height: 6vh;
+                    background: #2b303b;
+                    border: none;
+                    font-size: 1.2em;
+                    color: #fff;
+                    width: 30vw;
+                    padding-left: 45px;
+                    float: right;
+                }
+                
+                @media only screen and (max-device-width: 1100px) {
+                    .imgBx {
                         display: none;
                     }
-                    
-                    .show {
-                        display: block;
-                    }
-                    
-                    .subtitle {
-                        font-size: 20px;
-                        color: aliceblue;
-                        font-weight: 500;
-                    }
-                    
-                    .text-demo {
-                        font-size: 0.8rem;
-                        color: rgba(255, 255, 255, 0.8);
-                        font-style: italic;
-                    }
-                    
-                    .card-animes {
-                        display: grid;
-                        grid-template-columns: 350px;
-                        grid-template-rows: 400px 220px 70px;
-                        grid-template-areas: "image""text""stats";
-                        border-radius: 18px;
-                        background: #15141B;
-                        text-align: center;
-                        transition: 0.2s ease;
-                        cursor: pointer;
-                        margin: 10px;
-                        transition: 0.2s ease;
-                        color: white;
-                    }
-                    
-                    .favorite .heart i {
-                        color: #dc3545;
-                    }
-                    
-                    .favorite .heart i:hover {
-                        color: #fff;
-                    }
-                    
-                    .card-animes-image {
-                        grid-area: image;
-                    }
-                    
-                    .card-animes-text {
-                        grid-area: text;
-                        margin: 25px;
-                    }
-                    
-                    .card-animes-stats {
-                        font-size: 10px;
-                        grid-area: stats;
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-template-rows: 1fr;
-                        border-bottom-left-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                        background: #5aa897;
-                    }
-                    
-                    .card-animes-stats .stat {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 10px;
-                        color: white;
-                        margin: 10px;
-                    }
-                    
-                    .card-animes-stats .stat a {
-                        color: white;
-                    }
-                    
-                    .card-animes-stats .stat a:hover {
-                        color: #131219;
-                    }
-                    
-                    .card-animes-stats .stat:hover {
-                        color: #dc3545;
-                    }
-                    
-                    .card-animes-stats .type {
-                        font-size: 11px;
-                        font-weight: 300;
-                        text-transform: uppercase;
-                    }
-                    
-                    .card-animes-stats .value {
-                        font-size: 22px;
-                        font-weight: 500;
-                    }
-                    
-                    .card-animes-image {
-                        grid-area: image;
-                        border-top-left-radius: 15px;
-                        border-top-right-radius: 15px;
-                    }
-                    
-                    .tecnology {
-                        color: #5aa897;
-                        font-size: 13px;
-                    }
-                    
-                    .card-animes-text p {
-                        color: grey;
-                        font-size: 15px;
+                }
+                
+                @media only screen and (max-device-width: 1000px) {
+                    #mainNav .navbar-brand {
+                        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                         font-weight: 700;
+                        color: rgba(255, 255, 255, 0.7);
                     }
-                    
-                    .card-animes-text h2 {
-                        margin-top: 0px;
-                        font-size: 28px;
-                    }
-                    
-                    .banner {
-                        position: relative;
-                        width: 100%;
-                        min-height: 100vh;
-                        padding: 0 100px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .banner .banner-bg {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    
-                    .details {
-                        display: block;
-                    }
-                    
-                    .details h3 {
-                        color: #fff;
-                        letter-spacing: 1px;
-                        font-weight: 100;
-                        font-size: 1.3em;
-                    }
-                    
+                }
+                
+                @media only screen and (max-device-width: 800px) {
                     #search {
                         height: 6vh;
                         background: #2b303b;
                         border: none;
                         font-size: 1.2em;
                         color: #fff;
-                        width: 30vw;
+                        width: 100%;
                         padding-left: 45px;
                         float: right;
                     }
-                    
-                    @media only screen and (max-device-width: 1100px) {
-                        .imgBx {
-                            display: none;
-                        }
+                    .section-animes {
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
                     }
-                    
-                    @media only screen and (max-device-width: 800px) {
-                        #search {
-                            height: 6vh;
-                            background: #2b303b;
-                            border: none;
-                            font-size: 1.2em;
-                            color: #fff;
-                            width: 100%;
-                            padding-left: 45px;
-                            float: right;
-                        }
-                        .section-animes {
-                            display: block;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
+                }
