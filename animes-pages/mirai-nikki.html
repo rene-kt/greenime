@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Mirai Nikki</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -28,15 +29,7 @@
     <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .mirai-nikki-image {
-            position: relative;
-            display: flex;
-            width: 100%;
-            margin-top: auto;
-            margin-left: 5%;
-        }
-    </style>
+
 
 
 </head>
@@ -74,58 +67,71 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-mirai-nikki">
-            <div class="home-content-mirai-nikki">
+    <section class="section-animes">
 
 
-                <img class="logo-image" style="width: 100%;" src="../imgs/animes-logos/mirai-nikki.png">
+        <div class="box">
+            <div class="img-box">
 
-
-                <div class="details">
-
-                    <h3>Criador: Sakae Esuno</h3>
-                    <h3>Diretor: Naoto Hosoda</h3>
-                    <h3>Gênero: Aventura, Suspense, Sobrenatural, Ação</h3>
-                    <h3>Estúdio: Asread</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 26</h3>
-
-                </div>
-
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/mirai-nikki.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="mirai-nikki-image " src="../imgs/animes-cover/mirai-nikki.png">
+
+            <div class="info">
+                <h2>Mirai Nikki</h2>
 
 
-            <div class="episode">
 
-                <video src="../animes-episodes/mirai-nikki-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Horror, Sobrenatural, Suspense, Ação, Aventura, Adaptação de Manga, Shounen</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong>Sakae Esuno</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong>Naoto Hosoda</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> Asread</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 04</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
+
+                <p class="sinopse">
+                    Yukiteru é um garoto que poderia ser considerado estranho. Com dificuldades de fazer amigos, para ele a vida não passa de um grande reality show, onde ele é mais um espectador. Tudo que ele vê, revolve anotar tudo em seu celular fazendo dele seu diário.
+                    Mais estranho ainda são as atitudes do garoto, que imagina dentro de seus pensamentos um Deus dominador de tempo e espaço. Mas não era realmente uma imaginação… Yukiteru ganha desse Deus o poder de prever o futuro com seu celular,
+                    o seu “diário do futuro”. Porém nem tudo é tão bom assim: Yukiteru terá que usar seu poder para sobreviver em um jogo envolvendo perigosos assassinos e psicopatas, cada um com um poder especial em mãos. Todos eles estarão concorrendo
+                    para no final de contas serem o sucessor de Deus. Como Yukiteru conseguirá vencer esse jogo? E quem é a misteriosa,
+                </p>
+
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -134,16 +140,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
