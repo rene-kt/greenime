@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Toradora!</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,14 +29,7 @@
 
 
 
-    <style>
-        .toradora-image {
-            position: relative;
-            width: 90%;
-            margin-top: auto;
-            margin-left: auto;
-        }
-    </style>
+
 
 </head>
 
@@ -73,59 +66,69 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-toradora">
-            <div class="home-content-toradora">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/toradora-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-
-
-                <div class="details">
-
-                    <h3>Criador: Yuyuko Takemiya</h3>
-                    <h3>Diretor: Tatsuyuki Nagai</h3>
-                    <h3>Gênero: Slice of life, Comédia Romântica</h3>
-                    <h3>Estúdio: Estúdio J.C.Staff</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 25</h3>
-
-                </div>
-
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/toradora.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="toradora-image " src="../imgs/animes-cover/toradora.png">
+
+            <div class="info">
+
+                <h2>Toradora!</h2>
 
 
-            <div class="episode">
 
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> Comédia, Paródia, Romance, Seinen, Vida Escolar</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong>Yuyuko Takemiya</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Tatsuyuki Nagai</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> Estúdio J.C.Staff</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 25</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 05</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
+
+                <p class="sinopse">
+                    É um novo ano escolar e Ryuuji Takasu descobre que não só ele é da mesma classe como seu melhor amigo, Yuusaku Kitamura, mas também Minori Kushieda quem ele teve uma paixão não revelada por algum tempo. Junto com os dois vem o “Palmtop Tiger”, minúsculo
+                    Taiga Aisaka e melhor amiga de Minori. Apesar de sua pequena estatura, Taiga não tira nada de ninguém e é secretamente apaixonado por Kitamura. Ryuuji e Taiga, apesar de sua relação óleo e água, concordam em apoiar-se mutuamente em
+                    suas missões para o desejo dos seus corações.
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -134,16 +137,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
