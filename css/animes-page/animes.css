@@ -193,27 +193,26 @@
                         max-width: 32px;
                     }
                     
-                    @media only screen and (max-device-width: 1100px) {
-                        .imgBx {
-                            display: none;
-                        }
-                    }
-                    
                     @media only screen and (max-device-width: 800px) {
-                        .anime-card {
+                        .box {
+                            width: 90%;
                             display: block;
-                            align-items: center;
-                            justify-content: center;
-                            width: 80%;
-                            background-color: #222222;
+                            margin-top: 20%;
                         }
-                        .anime-card .anime-image {
-                            padding-top: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                        .box .info {
+                            margin-left: auto;
+                            margin-right: auto;
                         }
-                        .anime-card .anime-image img {
-                            border: 2px solid #5aa897;
+                        .info p {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .box .img-box {
+                            display: block;
+                            margin: 0;
+                            width: 100%;
+                        }
+                        .box .img-box i {
+                            padding-right: 20px;
                         }
                     }
