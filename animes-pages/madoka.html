@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Renê Arraes Viera Júnior">
 
-    <title>Anime Streaming</title>
+    <title>Madoka Magica</title>
 
     <!-- Font Awesome Icons -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,18 +25,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <link href="../css/owner.css" rel="stylesheet">
-    <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/animes-page/animes.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
 
 
-    <style>
-        .madoka-image {
-            position: relative;
-            display: flex;
-            width: 22%;
-            margin-right: 5%;
-        }
-    </style>
+
+
 
 </head>
 
@@ -72,58 +67,68 @@
 
     <!-- Cover da página -->
 
-    <section>
-
-        <div class="section-home-madoka">
-            <div class="home-content-madoka">
+    <section class="section-animes">
 
 
-                <img class="logo-image" src="../imgs/animes-logos/madoka-logo.png">
+        <div class="box">
+            <div class="img-box">
 
-                <div class="details">
-
-                    <h3>Criador: Gen Urobuchi</h3>
-                    <h3>Diretor: Akiyuki Shinbo</h3>
-                    <h3>Gênero: Fantasia</h3>
-                    <h3>Estúdio: SHAFT</h3>
-                    <h3>Temporada: 1</h3>
-                    <h3>Episódio: 12</h3>
-
-                </div>
-
-                <a class="js-scroll-trigger" href="#about">
-                    <button class="botao" onclick="toggleVideo();"><i class="fas fa-play" style="margin-right: 10px"></i>PLAY </button>
-                </a>
+                <img class="" src="../imgs/animes-cards/madoka.jpg">
+                <button><i class="fas fa-heart"></i>FAVORITAR</button>
 
             </div>
-            <img class="madoka-image" src="../imgs/animes-cover/madoka.png">
+
+            <div class="info">
 
 
 
+                <p><strong>Formato:</strong> Anime</p>
+                <hr class="solid">
+                <p><strong>Gênero:</strong> : Mahou shoujo, Horror, Seinen, Psicológico, Fantasia, Vida Escolar, Super Poderes</p>
+                <hr class="solid">
+                <p><strong>Autor:</strong>Gen Urobuchi</p>
+                <hr class="solid">
+                <p><strong>Diretor:</strong> Akiyuki Shinbo</p>
+                <hr class="solid">
+                <p><strong>Estúdio:</strong> SHAFT</p>
+                <hr class="solid">
+                <p><strong>Episódios:</strong> 12</p>
+                <hr class="solid">
+                <p><strong>Ovas:</strong> 0</p>
+                <hr class="solid">
+                <p><strong>Filmes:</strong> 0</p>
 
-            <div class="episode">
-
-                <video src="../animes-episodes/naruto-ep1.mp4" controls="true"></video>
-                <img src="../imgs/close.png" class="close" onclick="toggleVideo();">
+                <p class="sinopse">
+                    Puella Magi Madoka Magica (em japonês: 魔法少女まどか☆マギカ, Mahō Shōjo Madoka Magika?, “Garota Mágica Madoka Magica”) é uma série japonesa que possui um anime produzido pelo estúdio Shaft com roteiro de Gen Urobuchi, direção de Akiyuki Shinbo, design de personagens
+                    de Ume Aoki e trilha sonora de Yuki Kajiura. Kaname Madoka é meio normal, que vive uma vida tão normal. Até, que, um estranho encontro ocorre. Ela não sabe se esse encontro é uma coincidência, ou os caprichos do destino, mas duas coisas
+                    são certas… Este é o momento em que seu destino muda… Este é o começo de uma nova história!
+                </p>
             </div>
+
+
+
+
+
+
+
         </div>
-
 
     </section>
 
+    <section class="list-episodes" id="episodes">
+
+        <h2>Lista de episódios</h2>
+        <h4>
+            Os episódios desse anime se encomtram indisponíveis no momento. <a href="../animes.html">Procurar outros
+                animes</a>
+        </h4>
+
+    </section>
 
     <!-- Bootstrap core JavaScript -->
 
 
     <script>
-        function toggleVideo() {
-            const episode = document.querySelector('.episode');
-            const video = document.querySelector('video');
-
-            video.currentTime = 0;
-            episode.classList.toggle('active')
-            video.pause();
-        }
     </script>
     <script src="js/aos.js "></script>
     <script>
@@ -132,16 +137,19 @@
 
         });
     </script>
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../js/creative.js">
+    </script>
+    <script src="../vendor/jquery/jquery.min.js ">
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js "></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.js "></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js "></script>
+    <script src="../js/creative.min.js "></script>
 
 
 </body>
