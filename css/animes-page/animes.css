@@ -4,6 +4,10 @@
                         background-color: #131219 !important;
                     }
                     
+                     :root {
+                        --plyr-color-main: #5aa897;
+                    }
+                    
                     html,
                     body {
                         max-width: 100%;
@@ -24,13 +28,21 @@
                         font-weight: 700;
                     }
                     
+                    .plyr__video-wrapper {
+                        background: #000;
+                        height: 80%;
+                        margin: auto;
+                        overflow: hidden;
+                        position: relative;
+                        width: 90%;
+                    }
+                    
                     .section-animes {
                         padding: 0;
                         margin: 0;
                         box-sizing: border-box;
                         position: relative;
                         widows: 100%;
-                        min-height: 100vh;
                         background: #131219;
                         display: flex;
                         place-items: center;
@@ -38,9 +50,18 @@
                     
                     .box {
                         width: 90%;
-                        background-color: #15141B;
                         color: #fff;
                         display: flex;
+                    }
+                    
+                    .box-video {
+                        width: 90%;
+                        color: #fff;
+                        display: block;
+                    }
+                    
+                    .video {
+                        margin-top: 20px;
                     }
                     
                     .info {
@@ -106,15 +127,13 @@
                     }
                     
                     .botoes {
-                        display: flex;
-                        flex-wrap: wrap;
                         width: 100%;
                     }
                     
-                    .botoes button {
+                    .botoes div {
                         margin: 5px;
+                        width: 150px;
                         position: relative;
-                        width: 100%;
                         display: inline-block;
                         padding: 15px 30px;
                         margin-top: 20px;
@@ -161,6 +180,24 @@
                         font-weight: 700;
                         text-align: justify;
                         margin-top: 5%;
+                    }
+                    
+                    .hd {
+                        position: relative;
+                        display: inline-block;
+                        padding: 3px 10px;
+                        margin-top: 20px;
+                        background: #5aa897;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    
+                    .hd:hover {
+                        background: #5eb8a4;
                     }
                     
                     .list-episodes {
@@ -225,11 +262,11 @@
                         cursor: pointer;
                     }
                     
-                    .info .episode {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
+                    .box-video h2 {
+                        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                        font-weight: 700;
+                        color: rgba(255, 255, 255, 0.7);
+                        margin-top: 20px;
                     }
                     
                     video {
@@ -255,15 +292,33 @@
                     }
                     
                     @media only screen and (max-device-width: 800px) {
+                        .botoes {
+                            display: flex;
+                            place-items: center;
+                        }
+                        .botoes div {
+                            width: 45%;
+                            position: relative;
+                            display: inline-block;
+                            padding: 15px 30px;
+                            margin-top: 20px;
+                            background: #5aa897;
+                            color: #fff;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-size: 0.8em;
+                            font-weight: 700;
+                        }
+                        .video video {
+                            width: 100%;
+                        }
                         html,
                         body {
                             max-width: 100%;
                             overflow-x: hidden;
                         }
                         .box {
-                            width: 90%;
                             display: block;
-                            margin: auto;
                         }
                         .box .info {
                             display: block;
