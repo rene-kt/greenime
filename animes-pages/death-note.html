@@ -152,7 +152,7 @@
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).indexOf('death-note') == 0) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('death-note')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
     </script>
     <script src="js/aos.js "></script>
     <script>

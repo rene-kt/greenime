@@ -77,8 +77,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/sailor.jpg">
-                <button id="button" class="botao" onclick="addFavorite('button')"><i class="fas fa-heart"></i>FAVORITAR</button>
-
+                <button id="button" class="botao" onclick="addAndRemoveFavorites('sailor'); changeColorOfHeart();"><i
+                    class="fas fa-heart"></i>FAVORITAR</button>
             </div>
 
             <div class="info">
@@ -132,8 +132,26 @@
 
     <!-- Bootstrap core JavaScript -->
 
-
     <script>
+        function changeColorOfHeart() {
+            if (document.getElementById('button').classList.contains('favorite')) {
+
+                document.getElementById('button').classList.remove('favorite');
+                document.getElementById('button').classList.add('botao');
+
+
+
+
+            } else {
+                document.getElementById('button').classList.remove('botao');
+                document.getElementById('button').classList.add('favorite');
+            }
+
+        }
+    </script>
+
+    <script type="module">
+        if (JSON.parse(localStorage.getItem('favorites')).includes('sailor')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
     </script>
     <script src="js/aos.js "></script>
     <script>

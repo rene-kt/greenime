@@ -574,16 +574,15 @@
 
 
             for (let index = 0; index < itens.length; index++) {
-                element = itens[index];
                 w3AddClass(itens[index], "hide");
+                element = itens[index];
 
-                if (favorites.indexOf(element.id) == 0) {
+
+                if (favorites.includes(element.id)) {
+
                     w3RemoveClass(element, "hide");
                 }
             }
-
-
-
         }
 
 

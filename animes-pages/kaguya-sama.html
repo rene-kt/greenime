@@ -75,8 +75,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/kaguya-sama.jpg">
-                <button id="button" class="botao" onclick="addFavorite('button')"><i class="fas fa-heart"></i>FAVORITAR</button>
-
+                <button id="button" class="botao" onclick="addAndRemoveFavorites('kaguya'); changeColorOfHeart();"><i
+                    class="fas fa-heart"></i>FAVORITAR</button>
             </div>
 
             <div class="info">
@@ -159,62 +159,26 @@
 
     <!-- Bootstrap core JavaScript -->
 
-
     <script>
-        function toggleVideo1() {
-            const episode = document.getElementsByClassName('episode');
-            const video = document.getElementsByClassName('video');
+        function changeColorOfHeart() {
+            if (document.getElementById('button').classList.contains('favorite')) {
+
+                document.getElementById('button').classList.remove('favorite');
+                document.getElementById('button').classList.add('botao');
 
 
-            video[0].currentTime = 0;
-            episode[0].classList.toggle('active')
-            video[0].pause();
-
-        }
-
-        function toggleVideo2() {
-            const episode = document.getElementsByClassName('episode');
-            const video = document.getElementsByClassName('video');
 
 
-            video[1].currentTime = 0;
-            episode[1].classList.toggle('active')
-            video[1].pause();
+            } else {
+                document.getElementById('button').classList.remove('botao');
+                document.getElementById('button').classList.add('favorite');
+            }
 
         }
+    </script>
 
-        function toggleVideo3() {
-            const episode = document.getElementsByClassName('episode');
-            const video = document.getElementsByClassName('video');
-
-
-            video[2].currentTime = 0;
-            episode[2].classList.toggle('active')
-            video[2].pause();
-
-        }
-
-        function toggleVideo4() {
-            const episode = document.getElementsByClassName('episode');
-            const video = document.getElementsByClassName('video');
-
-
-            video[3].currentTime = 0;
-            episode[3].classList.toggle('active')
-            video[3].pause();
-
-        }
-
-        function toggleVideo5() {
-            const episode = document.getElementsByClassName('episode');
-            const video = document.getElementsByClassName('video');
-
-
-            video[4].currentTime = 0;
-            episode[4].classList.toggle('active')
-            video[4].pause();
-
-        }
+    <script type="module">
+        if (JSON.parse(localStorage.getItem('favorites')).includes('kaguya')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
     </script>
     <script src="js/aos.js "></script>
     <script>
