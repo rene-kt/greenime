@@ -82,7 +82,7 @@
                         </ul>
                     </li>
                     <li class="nav-item" style="cursor: pointer">
-                        <a class="nav-link" onclick="filterSelection('favorite'); addActiveFunctionToFavorite()">Favoritos</a>
+                        <a class="nav-link" onclick="returnFavorites()" ;>Favoritos</a>
                     </li>
                 </ul>
                 <li class="box container-1 d-flex">
@@ -566,30 +566,26 @@
         filterSelection("all")
 
 
-        function addActiveFunctionToFavorite() {
-            document.getElementById('favorite').classList.add('active');
-        }
+        function returnFavorites() {
 
-        function removeActiveFunctionToFavorite() {
-            document.getElementById('favorite').classList.remove('active');
-        }
 
-        function addFavorite(idName) {
+            itens = document.getElementsByClassName("filterDiv");
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-            if (document.getElementById(idName).classList.contains('favorite')) {
 
-                document.getElementById(idName).classList.remove('favorite');
+            for (let index = 0; index < itens.length; index++) {
+                element = itens[index];
+                w3AddClass(itens[index], "hide");
 
-                if (document.getElementById('favorite').classList.contains('active')) {
-                    filterSelection('favorite');
+                if (favorites.indexOf(element.id) == 0) {
+                    w3RemoveClass(element, "hide");
                 }
-
-            } else {
-
-                document.getElementById(idName).classList.add('favorite');
             }
 
+
+
         }
+
 
         function filterSelection(c) {
             var x, i;
