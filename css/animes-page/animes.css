@@ -161,6 +161,23 @@
                         font-weight: 700;
                     }
                     
+                    .box .img-box .favorite {
+                        position: relative;
+                        display: inline-block;
+                        padding: 15px 30px;
+                        margin-top: 20px;
+                        background: #5aa897;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 0.95em;
+                        font-weight: 700;
+                    }
+                    
+                    .box .img-box .favorite i {
+                        color: #dc3545;
+                    }
+                    
                     .box .img-box img {
                         width: 300px;
                     }

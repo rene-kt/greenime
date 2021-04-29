@@ -1,3 +1,4 @@
+// get favorites from local storage or empty array
 function addFavorite(idName) {
 
 
@@ -16,6 +17,35 @@ function addFavorite(idName) {
     }
 
 }
+
+function returnFavorites() {
+    var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    // add class 'fav' to each favorite
+    favorites.forEach(function(favorite) {
+        document.getElementById(favorite).className = 'fav';
+    });
+}
+
+function addAndRemoveFavorites(id) {
+    var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    // register click event listener
+    index = favorites.indexOf(id);
+    // return if target doesn't have an id (shouldn't happen)
+    if (!id) return;
+    // item is not favorite
+    if (index == -1) {
+        favorites.push(id);
+        // item is already favorite
+    } else {
+        favorites.splice(index, 1);
+    }
+    // store array in local storage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+
+// local storage stores strings so we use JSON to stringify for storage and parse to get out of storage
 (function($) {
     "use strict"; // Start of use strict
 
