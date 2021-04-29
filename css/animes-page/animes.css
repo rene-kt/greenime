@@ -132,7 +132,6 @@
                     
                     .botoes div {
                         margin: 5px;
-                        width: 150px;
                         position: relative;
                         display: inline-block;
                         padding: 15px 30px;
@@ -295,6 +294,7 @@
                         .botoes {
                             display: flex;
                             place-items: center;
+                            flex-wrap: wrap;
                         }
                         .botoes div {
                             width: 45%;

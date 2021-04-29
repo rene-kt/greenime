@@ -1,5 +1,7 @@
 function addFavorite(idName) {
 
+
+
     if (document.getElementById(idName).classList.contains('favorite')) {
 
         document.getElementById(idName).classList.remove('favorite');
