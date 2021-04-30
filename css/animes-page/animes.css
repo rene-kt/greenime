@@ -150,6 +150,7 @@
                     }
                     
                     .box .img-box .botao {
+                        border-style: none;
                         position: relative;
                         display: inline-block;
                         padding: 15px 30px;
@@ -164,6 +165,7 @@
                     }
                     
                     .box .img-box .favorite {
+                        border-style: none;
                         position: relative;
                         display: inline-block;
                         padding: 15px 30px;

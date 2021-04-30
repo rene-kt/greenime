@@ -118,9 +118,8 @@
                 .card-animes-stats {
                     font-size: 10px;
                     grid-area: stats;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr;
+                    display: flex;
+                    justify-content: flex-start;
                     border-bottom-left-radius: 15px;
                     border-bottom-right-radius: 15px;
                     background: #5aa897;
@@ -133,7 +132,19 @@
                     flex-direction: column;
                     padding: 10px;
                     color: white;
-                    margin: 10px;
+                }
+                
+                .card-animes-stats .stat h5 {
+                    font-size: 2em;
+                    letter-spacing: 1px;
+                }
+                
+                .card-animes-stats .stat:nth-child(1) {
+                    padding-left: 30px;
+                }
+                
+                .card-animes-stats .stat:nth-child(2) {
+                    padding-left: 10px;
                 }
                 
                 .card-animes-stats .stat a {
