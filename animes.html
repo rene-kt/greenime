@@ -80,6 +80,9 @@
                             <li><a onclick="filterSelection('acao'); removeActiveFunctionToFavorite()" class="dropdown-item">Ação</a></li>
                             <li><a onclick="filterSelection('shounen'); removeActiveFunctionToFavorite()" class="dropdown-item">Shounen</a></li>
                             <li><a onclick="filterSelection('ficcao'); removeActiveFunctionToFavorite()" class="dropdown-item">Ficção Científica</a></li>
+                            <li><a onclick="filterSelection('escolar'); removeActiveFunctionToFavorite()" class="dropdown-item">Vida Escolar</a></li>
+                            <li><a onclick="filterSelection('romance'); removeActiveFunctionToFavorite()" class="dropdown-item">Romance</a></li>
+                            <li><a onclick="filterSelection('misterio'); removeActiveFunctionToFavorite()" class="dropdown-item">Mistério</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" style="cursor: pointer">
@@ -108,7 +111,7 @@
 
     <div class="section-animes">
 
-        <div class="filterDiv card-animes hide suspense" id="death-note">
+        <div class="filterDiv card-animes hide suspense misterio" id="death-note">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/death-note.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
                 <span class="tecnology">MISTÉRIO/SUSPENSE</span>
@@ -202,10 +205,10 @@
         </div>
 
 
-        <div class="filterDiv card-animes comedia hide" id="kaguya">
+        <div class="filterDiv card-animes comedia romance escolar hide" id="kaguya">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/kaguya-sama.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
-                <span class="tecnology">COMÉDIA ROMÂNTICA</span>
+                <span class="tecnology">COMÉDIA/ROMANCE/VIDA ESCOLAR</span>
                 <h2 class="anime-name">Kaguya Sama: Love is War</h2>
                 <p>Shinomiya Kaguya e Miyuki Shirogane são membros do Conselho Estudantil da Academia Shuchi'in. O tempo que eles passam juntos fez com que se apaixonassem</p>
             </div>
@@ -251,10 +254,10 @@
 
 
 
-        <div class="filterDiv card-animes fantasia hide" id="madoka">
+        <div class="filterDiv card-animes fantasia escolar hide" id="madoka">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/madoka.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
-                <span class="tecnology">FANTASIA</span>
+                <span class="tecnology">FANTASIA/VIDA ESCOLAR</span>
                 <h2 class="anime-name">Madoka Magica</h2>
                 <p>Garotas recrutadas por um incubator, Kyubey, que em troca de um pedido realizado, elas se convertem em garotas mágicas para lutarem contra bruxas.</p>
             </div>
@@ -273,10 +276,10 @@
             </div>
         </div>
 
-        <div class="filterDiv card-animes magia hide" id="sailor">
+        <div class="filterDiv card-animes magia aventura escolar romance  hide" id="sailor">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/sailor.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
-                <span class="tecnology">MAGIA</span>
+                <span class="tecnology">MAGIA/AVENTURA/VIDA ESCOLAR</span>
                 <h2 class="anime-name">Sailor Moon</h2>
                 <p> Usagi Tsukino, uma garota normal e inocente, que um dia encontra Luna, uma gata falante que revela a identidade de Usagi como "Sailor Moon", uma guerreira mágica destinada a salvar a Terra das forças do mal.</p>
             </div>
@@ -295,10 +298,10 @@
             </div>
         </div>
 
-        <div class="filterDiv card-animes shounen hide" id="kimetsu">
+        <div class="filterDiv card-animes shounen aventura acao hide" id="kimetsu">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/kimetsu.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
-                <span class="tecnology">SHOUNEN</span>
+                <span class="tecnology">SHOUNEN/AVENTURA/AÇÃO</span>
                 <h2 class="anime-name">Kimetsu no Yaiba</h2>
                 <p>Tanjiro, um jovem simples descobre que sua família foi massacrada por um demônio. E, ainda, Nezuko, sua irmã, única sobrevivente, também acabou transformada em um demônio.</p>
             </div>
@@ -346,7 +349,7 @@
             <div class="card-animes-text">
                 <span class="tecnology">COMÉDIA ROMÂNTICA</span>
                 <h2 class="anime-name">B Gata H Kei</h2>
-                <p style="font-size: 0.72em">Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba decidindo
+                <p style="font-size: 0.8em">Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba decidindo
                     partir para cima de Kosuda Takashi, o qual ela considera mais fácil de conquistar.
                 </p>
             </div>
@@ -366,10 +369,10 @@
         </div>
 
 
-        <div class="filterDiv card-animes hide" id="loveu">
+        <div class="filterDiv card-animes romance escolar comedia hide" id="loveu">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/loveu.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
-                <span class="tecnology">ROMANCE</span>
+                <span class="tecnology">ROMANCE/COMÉDIA/VIDA ESCOLAR</span>
                 <h2 class="anime-name" style="font-size: 1.2em;">Suki-tte Ii na yo<br>(Say I Love U)</h2>
 
                 <p>Esta história roda em torno de Tachibana Mei, uma garota que nunca fez amigos ou teve um namorado em 16 anos. Certo dia, ela acidentalmente esbarra em Kurosawa, o garoto mais popular do colégio.</p>
@@ -389,7 +392,7 @@
             </div>
         </div>
 
-        <div class="filterDiv card-animes hide comedia" id="charlotte">
+        <div class="filterDiv card-animes hide comedia escolar romance" id="charlotte">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/charlotte.jpg'); background-size: cover;"></div>
             <div class="card-animes-text">
                 <span class="tecnology"> COMÉDIA/VIDA ESCOLAR/SUPER-PODERES </span>

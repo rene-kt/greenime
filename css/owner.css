@@ -86,7 +86,7 @@
                 .card-animes {
                     display: grid;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 220px 70px;
+                    grid-template-rows: 400px 230px 70px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 18px;
                     background: #15141B;
@@ -126,6 +126,7 @@
                 }
                 
                 .card-animes-stats .stat {
+                    margin-top: 5px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
