@@ -88,6 +88,9 @@
                     <li class="nav-item" style="cursor: pointer">
                         <a class="nav-link" onclick="returnFavorites()" ;>Favoritos</a>
                     </li>
+                    <li class="nav-item" style="cursor: pointer">
+                        <a class="nav-link" onclick="returnHistorico()" ;>Histórico</a>
+                    </li>
                 </ul>
                 <li class="box container-1 d-flex">
 
@@ -109,7 +112,7 @@
 
 
 
-    <div class="section-animes">
+    <div class="section-animes" id="section-animes">
 
         <div class="filterDiv card-animes hide suspense misterio" id="death-note">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/death-note.jpg'); background-size: cover;"></div>
@@ -561,7 +564,19 @@
 
     </div>
     </div>
+
+    <div class="list-episodes" id="episodes-section">
+
+        <h2>Lista de episódios</h2>
+
+
+
+
+
+
+    </div>
     </section>
+
 
 
     <!-- Bootstrap core JavaScript -->
@@ -569,12 +584,69 @@
     <script>
         filterSelection("all")
 
+        function clearData() {
+            var historico = JSON.parse(localStorage.getItem('historico')) || [];
+            historico.splice(0, historico.length)
+
+
+        }
+
+        function returnHistorico() {
+
+            itens = document.getElementsByClassName("filterDiv");
+            var historico = JSON.parse(localStorage.getItem('historico')) || [];
+
+            var section = document.getElementById('episodes-section');
+
+
+            if (section.style.display == 'block') {
+
+            }
+
+
+            if (section.style.display == 'none') {
+
+                while (section.hasChildNodes()) {
+                    section.removeChild(section.lastChild);
+                }
+
+
+                var element = document.createElement('h2');
+
+                element.innerHTML = 'Histórico de episódios';
+                section.appendChild(element);
+
+
+                for (let index = 0; index < itens.length; index++) {
+                    w3AddClass(itens[index], "hide");
+                }
+
+                section.style.display = 'block';
+
+                for (let index = 0; index < historico.length; index++) {
+                    var name = historico[index]['name'];
+                    var date = historico[index]['date'];
+
+
+                    var newElement = document.createElement('div');
+                    newElement.innerHTML = name + ' ' + date;
+                    document.getElementById('episodes-section').appendChild(newElement);
+
+                }
+            }
+
+
+        }
+
 
         function returnFavorites() {
 
 
             itens = document.getElementsByClassName("filterDiv");
             var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            var section = document.getElementById('episodes-section');
+            section.style.display = 'none';
+
 
 
             for (let index = 0; index < itens.length; index++) {
@@ -592,6 +664,8 @@
 
         function filterSelection(c) {
             var x, i;
+            var section = document.getElementById('episodes-section');
+            section.style.display = 'none';
 
             x = document.getElementsByClassName("filterDiv");
             if (c == "all") c = "";

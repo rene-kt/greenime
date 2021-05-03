@@ -18,6 +18,10 @@ function addFavorite(idName) {
 
 }
 
+
+
+
+
 function returnFavorites() {
     var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     // add class 'fav' to each favorite
