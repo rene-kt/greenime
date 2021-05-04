@@ -162,7 +162,7 @@
                 .card-animes {
                     display: grid;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 230px 70px;
+                    grid-template-rows: 400px 250px 70px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 18px;
                     background: #15141B;
@@ -188,7 +188,9 @@
                 
                 .card-animes-text {
                     grid-area: text;
-                    margin: 25px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    margin-top: 35px;
                 }
                 
                 .card-animes-stats {
@@ -199,6 +201,16 @@
                     border-bottom-left-radius: 15px;
                     border-bottom-right-radius: 15px;
                     background: #5aa897;
+                    height: 50px;
+                }
+                
+                .card-animes-stats:hover h5 {
+                    color: #15141B;
+                    font-weight: 700;
+                }
+                
+                .card-animes a {
+                    text-decoration: none;
                 }
                 
                 .card-animes-stats .stat {
@@ -207,13 +219,17 @@
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    padding: 10px;
                     color: white;
                 }
                 
                 .card-animes-stats .stat h5 {
                     font-size: 2em;
                     letter-spacing: 1px;
+                }
+                
+                .card-animes-stats .stat i {
+                    font-size: 1em;
+                    padding-right: 10px;
                 }
                 
                 .card-animes-stats .stat:nth-child(1) {
