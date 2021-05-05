@@ -164,7 +164,7 @@
                     grid-template-columns: 350px;
                     grid-template-rows: 400px 250px 70px;
                     grid-template-areas: "image""text""stats";
-                    border-radius: 18px;
+                    border-radius: 5px;
                     background: #15141B;
                     text-align: center;
                     transition: 0.2s ease;
@@ -198,8 +198,8 @@
                     grid-area: stats;
                     display: flex;
                     justify-content: flex-start;
-                    border-bottom-left-radius: 15px;
-                    border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
                     background: #5aa897;
                     height: 50px;
                 }
@@ -223,7 +223,7 @@
                 }
                 
                 .card-animes-stats .stat h5 {
-                    font-size: 2em;
+                    font-size: 1.5em;
                     letter-spacing: 1px;
                 }
                 
@@ -261,8 +261,8 @@
                 
                 .card-animes-image {
                     grid-area: image;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
                 }
                 
                 .tecnology {
