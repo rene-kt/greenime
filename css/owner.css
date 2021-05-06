@@ -378,7 +378,7 @@
                     .card-animes {
                         display: grid;
                         position: relative;
-                        grid-template-columns: 300px;
+                        grid-template-columns: 100%;
                         grid-template-rows: 400px 100px 70px;
                         grid-template-areas: "image""text""stats";
                         border-radius: 5px;
@@ -400,7 +400,7 @@
                         transition-duration: 0.7s;
                         display: none;
                         height: 400px;
-                        width: 300px;
+                        width: 100%;
                         background: #15141B;
                         opacity: 0;
                         display: flex;
