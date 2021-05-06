@@ -163,7 +163,7 @@
                     display: grid;
                     position: relative;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 115px 70px;
+                    grid-template-rows: 400px 100px 70px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 5px;
                     background: #15141B;
@@ -216,9 +216,7 @@
                 
                 .card-animes-text {
                     grid-area: text;
-                    margin-left: 25px;
-                    margin-right: 25px;
-                    margin-top: 35px;
+                    margin-top: 15px;
                 }
                 
                 .card-animes-stats {
@@ -381,7 +379,7 @@
                         display: grid;
                         position: relative;
                         grid-template-columns: 300px;
-                        grid-template-rows: 400px 115px 70px;
+                        grid-template-rows: 400px 100px 70px;
                         grid-template-areas: "image""text""stats";
                         border-radius: 5px;
                         background: #15141B;
