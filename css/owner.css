@@ -163,7 +163,7 @@
                     display: grid;
                     position: relative;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 120px 70px;
+                    grid-template-rows: 400px 115px 70px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 5px;
                     background: #15141B;
@@ -197,9 +197,9 @@
                     margin-left: 20px;
                     margin-right: 20px;
                     text-align: justify;
-                    color: grey;
+                    color: white;
                     font-size: 15px;
-                    font-weight: 900;
+                    font-weight: 700;
                 }
                 
                 .favorite .heart i {
@@ -381,7 +381,7 @@
                         display: grid;
                         position: relative;
                         grid-template-columns: 300px;
-                        grid-template-rows: 400px 120px 70px;
+                        grid-template-rows: 400px 115px 70px;
                         grid-template-areas: "image""text""stats";
                         border-radius: 5px;
                         background: #15141B;
