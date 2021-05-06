@@ -161,8 +161,9 @@
                 
                 .card-animes {
                     display: grid;
+                    position: relative;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 250px 70px;
+                    grid-template-rows: 400px 120px 70px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 5px;
                     background: #15141B;
@@ -172,6 +173,33 @@
                     margin: 10px;
                     transition: 0.2s ease;
                     color: white;
+                }
+                
+                .card-animes .sinopse:hover {
+                    opacity: 0.8;
+                    animation: ease-in;
+                    transition-duration: 0.7s;
+                }
+                
+                .card-animes .sinopse {
+                    animation: ease-in;
+                    transition-duration: 0.7s;
+                    display: none;
+                    height: 400px;
+                    width: 350px;
+                    background: #15141B;
+                    opacity: 0;
+                    display: flex;
+                    place-items: center;
+                }
+                
+                .card-animes .sinopse p {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    text-align: justify;
+                    color: grey;
+                    font-size: 15px;
+                    font-weight: 900;
                 }
                 
                 .favorite .heart i {
@@ -342,15 +370,18 @@
                         float: right;
                     }
                     .section-animes {
-                        display: block;
+                        display: flex;
                         justify-content: center;
                         align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
                         width: 100%;
                     }
                     .card-animes {
                         display: grid;
-                        grid-template-columns: 100%;
-                        grid-template-rows: 400px 250px 70px;
+                        position: relative;
+                        grid-template-columns: 300px;
+                        grid-template-rows: 400px 120px 70px;
                         grid-template-areas: "image""text""stats";
                         border-radius: 5px;
                         background: #15141B;
@@ -360,5 +391,21 @@
                         margin: 10px;
                         transition: 0.2s ease;
                         color: white;
+                    }
+                    .card-animes .sinopse:hover {
+                        opacity: 0.8;
+                        animation: ease-in;
+                        transition-duration: 0.7s;
+                    }
+                    .card-animes .sinopse {
+                        animation: ease-in;
+                        transition-duration: 0.7s;
+                        display: none;
+                        height: 400px;
+                        width: 300px;
+                        background: #15141B;
+                        opacity: 0;
+                        display: flex;
+                        place-items: center;
                     }
                 }
