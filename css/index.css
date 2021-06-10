@@ -127,3 +127,15 @@
 .section-home .members .instagram {
     width: 40px;
 }
+
+.section-home .email h2 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #C7C7CA;
+    font-weight: 900;
+}
