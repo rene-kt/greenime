@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Hind Siliguri;
+    src: url('../fonts/HindSiliguri-Regular.ttf');
+}
+
+.center {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.section-home .info .divider {
+    margin: 5%;
+    height: 3px;
+    background: #131219;
+}
+
+.section-home {
+    background: #15141C;
+    width: 70%;
+    color: #fff;
+    display: flex;
+}
+
+.section-home .info {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-home .title {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.section-home .title img {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.section-home .title h2 {
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #C7C7CA;
+}
+
+.section-home .title h2 strong {
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #C7C7CA;
+    color: #5aa897;
+    font-weight: 900;
+}
+
+.section-home .about {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: block;
+    padding: 5px;
+}
+
+.section-home .about h3 {
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #C7C7CA;
+    font-weight: 900;
+}
+
+.section-home .about p {
+    color: #5A606F;
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.section-home .criadores h2 {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #C7C7CA;
+    font-weight: 900;
+}
+
+.section-home .members {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-home .members div {
+    margin-right: 50px;
+    width: 250px;
+}
+
+.section-home .members h3 {
+    font-family: Hind Siliguri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #C7C7CA;
+    font-weight: 900;
+}
+
+.section-home .members .foto {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.section-home .members .instagram {
+    width: 40px;
+}

@@ -47,7 +47,13 @@
         .dropdown-item:active {
             color: #fff;
             text-decoration: none;
-            background-color: #5aa897;
+            background-color: #5aa897 !important;
+        }
+        
+        .nav-item {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -68,7 +74,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Gêneros
+                            Gêneros+
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                             <li><a onclick="filterSelection('all'); removeActiveFunctionToFavorite()" class="dropdown-item">Todos</a></li>

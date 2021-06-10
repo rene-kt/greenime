@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Renê Arraes Viera Júnior">
+
+    <title>Anime Streaming</title>
+
+    <!-- Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS - Includes Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+
+
+    <!-- LightBox Css -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+
+    <style>
+        body {
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #131219;
+        }
+        
+        .dropdown-item.active,
+        .dropdown-item:active {
+            color: #fff;
+            text-decoration: none;
+            background-color: #5aa897;
+        }
+        
+        .nav-item {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="#home"> <img id="image-id" class="logo-img img-fluid" style="width: 40px;  " src="imgs/logo.png"> GREENIME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" onclick="filterSelection('all'); removeActiveFunctionToFavorite()" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gêneros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a onclick="filterSelection('all'); removeActiveFunctionToFavorite()" class="dropdown-item">Todos</a></li>
+                            <li><a onclick="filterSelection('fantasia'); removeActiveFunctionToFavorite()" class="dropdown-item">Fantasia</a></li>
+                            <li><a onclick="filterSelection('aventura'); removeActiveFunctionToFavorite()" class="dropdown-item">Aventura</a></li>
+                            <li><a onclick="filterSelection('comedia'); removeActiveFunctionToFavorite()" class="dropdown-item">Comédia Romântica</a></li>
+                            <li><a onclick="filterSelection('slice'); removeActiveFunctionToFavorite()" class="dropdown-item">Slice of life</a></li>
+                            <li><a onclick="filterSelection('suspense'); removeActiveFunctionToFavorite()" class="dropdown-item">Suspense</a></li>
+                            <li><a onclick="filterSelection('acao'); removeActiveFunctionToFavorite()" class="dropdown-item">Ação</a></li>
+                            <li><a onclick="filterSelection('shounen'); removeActiveFunctionToFavorite()" class="dropdown-item">Shounen</a></li>
+                            <li><a onclick="filterSelection('ficcao'); removeActiveFunctionToFavorite()" class="dropdown-item">Ficção Científica</a></li>
+                            <li><a onclick="filterSelection('escolar'); removeActiveFunctionToFavorite()" class="dropdown-item">Vida Escolar</a></li>
+                            <li><a onclick="filterSelection('romance'); removeActiveFunctionToFavorite()" class="dropdown-item">Romance</a></li>
+                            <li><a onclick="filterSelection('misterio'); removeActiveFunctionToFavorite()" class="dropdown-item">Mistério</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="cursor: pointer">
+                        <a class="nav-link" onclick="returnFavorites()" ;>Favoritos</a>
+                    </li>
+                    <li class="nav-item" style="cursor: pointer">
+                        <a class="nav-link" onclick="returnHistorico()" ;>Histórico</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="center">
+
+
+
+        <section class="section-home">
+
+            <div class="info">
+
+
+                <div class="title">
+
+                    <img src="imgs/logo.png">
+                    <h2>Bem vindo(a) ao <br> <strong>Greenime</strong>! :D</h2>
+
+
+                </div>
+
+                <div class="divider"></div>
+
+
+                <div class="about">
+
+                    <h3>Sobre nós</h3>
+                    <p>O Greenime foi criado com a intenção de facilitar a vida dos fãs de animes, ajudando-os a encontrar de forma fácil e rápida o que procuram, possibilitando assistir com uma boa qualidade de imagem e som. Além de possuir um catálogo
+                        totalmente gratuito e diversificado, com animes dublados e legendados.</p>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+                <div class="criadores">
+
+                    <h2>Criadores</h2>
+                    <br>
+
+                    <div class="members">
+
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/cainha.png">
+                            <h3> <img class="instagram" src="imgs/instagram.png"> CarolainelBezerra
+                        </div>
+
+
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/clara.png">
+                            <h3> <img class="instagram" src="imgs/instagram.png"> clarapintobessa
+                        </div>
+
+
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/joyce.png">
+                            <h3> <img class="instagram" src="imgs/instagram.png"> joycee__ms
+                        </div>
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/larissa.png">
+                            <h3> <img class="instagram" src="imgs/instagram.png"> Larissadias__
+                        </div>
+
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/lolo.png">
+
+                            <h3> <img class="instagram" src="imgs/instagram.png"> diasm_gabriel
+                            </h3>
+                        </div>
+
+
+                        <div class="member">
+
+
+                            <img class="foto" src="imgs/members/samyla.png">
+                            <h3> <img class="instagram" src="imgs/instagram.png"> SXMYLA
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+    </div>
+
+    <script>
+    </script>
+
+
+    <script src="js/aos.js "></script>
+    <script>
+        AOS.init({
+            once: true,
+
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+
+
+
+    <!-- Custom scripts for this template -->
+
+</body>
+
+</html>
