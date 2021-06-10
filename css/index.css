@@ -3,6 +3,17 @@
         src: url('../fonts/HindSiliguri-Regular.ttf');
     }
     
+     ::-moz-selection {
+        /* Code for Firefox */
+        background: #5aa897;
+        color: #ffffff;
+    }
+    
+     ::selection {
+        background: #5aa897;
+        color: #ffffff;
+    }
+    
     .nav-ativo {
         height: 3px;
         background: #5aa897;

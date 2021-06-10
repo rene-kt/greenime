@@ -4,6 +4,17 @@
                     background-color: #131219;
                 }
                 
+                 ::-moz-selection {
+                    /* Code for Firefox */
+                    background: #5aa897;
+                    color: #ffffff;
+                }
+                
+                 ::selection {
+                    background: #5aa897;
+                    color: #ffffff;
+                }
+                
                 li {
                     list-style: none;
                 }
