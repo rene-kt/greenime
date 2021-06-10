@@ -18,6 +18,11 @@
                     font-weight: 700;
                 }
                 
+                .nav-item {
+                    text-transform: uppercase !important;
+                    font-weight: 700 !important;
+                }
+                
                 .botao {
                     border-style: none;
                     position: relative;
