@@ -3,6 +3,11 @@
         src: url('../fonts/HindSiliguri-Regular.ttf');
     }
     
+    .nav-ativo {
+        height: 3px;
+        background: #5aa897;
+    }
+    
     .center {
         display: flex;
         margin: 2%;

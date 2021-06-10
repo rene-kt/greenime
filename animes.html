@@ -58,6 +58,12 @@
             text-transform: uppercase;
             font-weight: 700;
         }
+        
+        .navactive {
+            border-bottom: 3px solid #5aa897;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
     </style>
 </head>
 
@@ -72,11 +78,11 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" onclick="filterSelection('all'); removeActiveFunctionToFavorite()" href="#">Home</a>
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a id="generosnav" class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gêneros+
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -95,10 +101,10 @@
                         </ul>
                     </li>
                     <li class="nav-item" style="cursor: pointer">
-                        <a class="nav-link" onclick="returnFavorites()" ;>Favoritos</a>
+                        <a class="nav-link" onclick="returnFavorites()" id="favoritesnav" ;>Favoritos</a>
                     </li>
                     <li class="nav-item" style="cursor: pointer">
-                        <a class="nav-link" onclick="returnHistorico()" ;>Histórico</a>
+                        <a class="nav-link" onclick="returnHistorico()" id="historiconav" ;>Histórico</a>
                     </li>
                 </ul>
                 <li class="box container-1 d-flex">
@@ -121,7 +127,7 @@
 
 
 
-    <div class="section-animes" id="section-animes">
+    <div class="section-animes" id="section-animes" id="#favorites">
 
         <div class="filterDiv card-animes hide suspense misterio" id="death-note">
 
@@ -618,6 +624,16 @@
             var section = document.getElementById('episodes-section');
 
 
+
+            favoritesnav = document.getElementById('favoritesnav');
+            favoritesnav.classList.remove("navactive");
+
+            generosnav = document.getElementById('generosnav');
+            generosnav.classList.remove("navactive");
+
+            historiconav = document.getElementById('historiconav');
+            historiconav.classList.add("navactive");
+
             if (section.style.display == 'block') {
 
             }
@@ -667,6 +683,20 @@
             section.style.display = 'none';
 
 
+            favoritesnav = document.getElementById('favoritesnav');
+            favoritesnav.classList.add("navactive");
+
+            generosnav = document.getElementById('generosnav');
+            generosnav.classList.remove("navactive");
+
+            historiconav = document.getElementById('historiconav');
+            historiconav.classList.remove("navactive");
+
+
+
+
+
+
 
             for (let index = 0; index < itens.length; index++) {
                 w3AddClass(itens[index], "hide");
@@ -685,6 +715,16 @@
             var x, i;
             var section = document.getElementById('episodes-section');
             section.style.display = 'none';
+
+
+            favoritesnav = document.getElementById('favoritesnav');
+            favoritesnav.classList.remove("navactive");
+
+            generosnav = document.getElementById('generosnav');
+            generosnav.classList.add("navactive");
+
+            historiconav = document.getElementById('historiconav');
+            historiconav.classList.remove("navactive");
 
             x = document.getElementsByClassName("filterDiv");
             if (c == "all") c = "";
