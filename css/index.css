@@ -10,7 +10,7 @@
     }
     
     .navbar-brand {
-        font-size: 1rem!important;
+        font-size: 1.1rem!important;
         color: #5aa897 !important;
     }
     
@@ -128,8 +128,8 @@
     }
     
     .section-home .members div {
-        margin-right: 50px;
-        width: 220px;
+        margin-right: 45px;
+        width: 200px;
     }
     
     .section-home .members h3 {
@@ -143,7 +143,7 @@
     }
     
     .section-home .members .foto {
-        width: 130px;
+        width: 100px;
         margin-bottom: 20px;
     }
     
