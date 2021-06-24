@@ -9,6 +9,15 @@
         color: #ffffff;
     }
     
+    .navbar-brand {
+        font-size: 1rem!important;
+        color: #5aa897 !important;
+    }
+    
+    .navbar-brand img {
+        width: 30px !important;
+    }
+    
      ::selection {
         background: #5aa897;
         color: #ffffff;
