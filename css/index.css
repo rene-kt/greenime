@@ -14,6 +14,10 @@
         color: #5aa897 !important;
     }
     
+    .nav-link {
+        height: 40px !important;
+    }
+    
     .navbar-brand img {
         width: 30px !important;
     }
@@ -176,11 +180,13 @@
     }
     
     .colas img {
+        margin: 0;
         width: 450px;
         mix-blend-mode: normal;
         opacity: 0.1;
         background-repeat: repeat;
         transition: 1.5s;
+        margin-top: -10px;
     }
     
     @media only screen and (max-device-width: 600px) {

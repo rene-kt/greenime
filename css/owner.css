@@ -29,6 +29,11 @@
                     color: #5aa897 !important;
                 }
                 
+                .nav-link {
+                    height: 40px !important;
+                    margin-top: 10px;
+                }
+                
                 .navbar-brand img {
                     width: 30px !important;
                 }
@@ -75,6 +80,7 @@
                     margin-right: 15px;
                     text-transform: uppercase;
                     border-bottom: 3px solid #5aa897;
+                    height: 40px;
                 }
                 
                 .bottom-bar .container {
