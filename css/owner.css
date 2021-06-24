@@ -432,6 +432,10 @@
                         transition: 0.2s ease;
                         color: white;
                     }
+                    .card-animes-text {
+                        grid-area: text;
+                        margin: auto 0;
+                    }
                     .card-animes .sinopse:hover {
                         opacity: 0.8;
                         animation: ease-in;
