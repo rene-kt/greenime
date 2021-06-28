@@ -125,8 +125,8 @@
                 .list-episodes h2 {
                     width: 90%;
                     padding-left: 20px;
-                    background-color: #5aa897;
-                    color: #fff;
+                    background-color: hsl(167, 31%, 51%);
+                    color: #C7C7CA;
                     font-weight: 700;
                     font-size: 1.2em;
                     padding-top: 5px;
