@@ -461,10 +461,12 @@
                 
                 #search {
                     height: 6vh;
+                    font-family: Hind Siliguri;
+                    color: #C7C7CA;
+                    font-weight: bold;
                     background: #2b303b;
                     border: none;
                     font-size: 1.2em;
-                    color: #fff;
                     width: 30vw;
                     padding-left: 45px;
                     float: right;
