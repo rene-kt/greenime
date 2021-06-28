@@ -77,6 +77,10 @@
                     padding: 15px 20px;
                 }
                 
+                .bottom-bar a {
+                    text-decoration: none;
+                }
+                
                 .bottom-bar h3 {
                     font-family: Hind Siliguri;
                     color: #C7C7CA;
@@ -87,6 +91,7 @@
                     text-transform: uppercase;
                     border-bottom: 3px solid #5aa897;
                     height: 40px;
+                    cursor: pointer;
                 }
                 
                 .bottom-bar .container {

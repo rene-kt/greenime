@@ -643,9 +643,13 @@
 
     <div class="bottom-bar ">
 
-        <h3> <img style="width: 20px; margin-right: 5px" src="imgs/info.png"> Sobre nós</h3>
-        <h3>Criadores</h3>
-        <h3> Mande um email</h3>
+        <a href="index.html">
+            <h3> <img style="width: 20px; margin-right: 5px" src="imgs/info.png"> Sobre nós</h3>
+        </a>
+        <a href="index.html">
+            <h3>Criadores</h3>
+        </a>
+        <h3 onclick="sendEmail();"> Mande um email</h3>
     </div>
 
 
@@ -665,6 +669,11 @@
     <script>
         filterSelection("all")
 
+
+        function sendEmail() {
+            window.open('https://mail.google.com/mail/?view=cm&fs=1&to=sammy.staredge@gmail.com');
+
+        }
 
 
         function returnHistorico() {
