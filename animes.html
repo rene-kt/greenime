@@ -130,6 +130,16 @@
     <!-- Cover da página -->
 
 
+    <div class="list-episodes" id="episodes-section">
+    </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -140,7 +150,7 @@
         <div class="filterDiv card-animes comedia escolar echhi seinen hide" id="gata">
             <div class="card-animes-image" style="background: url('imgs/animes-cards/gata.jpg'); background-size: cover;"></div>
             <div class="sinopse card-animes-image">
-                <p style="">Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba decidindo
+                <p>Uma garota chamada Yamada que pretende criar 100 amigos durante seu terceiro grau de estudo. Yamada é bem bonita, mas sua personalidade muda completamente para uma garota tímida e difícil diante dos homens. Ciente disso, ela acaba decidindo
                     partir para cima de Kosuda Takashi, o qual ela considera mais fácil de conquistar.
                 </p>
             </div>
@@ -628,18 +638,8 @@
     </div>
     </div>
 
-    <div class="list-episodes" id="episodes-section">
-
-        <h2>Lista de episódios</h2>
 
 
-
-
-
-
-    </div>
-
-    s
 
     <div class="bottom-bar ">
 
@@ -665,12 +665,7 @@
     <script>
         filterSelection("all")
 
-        function clearData() {
-            var historico = JSON.parse(localStorage.getItem('historico')) || [];
-            historico.splice(0, historico.length)
 
-
-        }
 
         function returnHistorico() {
 
@@ -702,10 +697,6 @@
                 }
 
 
-                var element = document.createElement('h2');
-
-                element.innerHTML = 'Histórico de episódios';
-                section.appendChild(element);
 
 
                 for (let index = 0; index < itens.length; index++) {
@@ -720,7 +711,7 @@
 
 
                     var newElement = document.createElement('div');
-                    newElement.innerHTML = name + ' ' + date;
+                    newElement.innerHTML = name + ' ' + "<strong>" + date + "</strong>";
                     document.getElementById('episodes-section').appendChild(newElement);
 
                 }
