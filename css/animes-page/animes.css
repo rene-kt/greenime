@@ -1,367 +1,412 @@
-                    body {
-                        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        overflow-x: hidden;
-                        background-color: #131219 !important;
-                    }
-                    
-                     :root {
-                        --plyr-color-main: #5aa897;
-                    }
-                    
-                    html,
-                    body {
-                        max-width: 100%;
-                        overflow-x: hidden;
-                    }
-                    
-                    li {
-                        list-style: none;
-                    }
-                    
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6 {
-                        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        font-weight: 700;
-                    }
-                    
-                    .plyr__video-wrapper {
-                        background: #000;
-                        height: 80%;
-                        margin: auto;
-                        overflow: hidden;
-                        position: relative;
-                        width: 90%;
-                    }
-                    
-                    .section-animes {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                        position: relative;
-                        widows: 100%;
-                        background: #131219;
-                        display: flex;
-                        place-items: center;
-                    }
-                    
-                    .box {
-                        width: 90%;
-                        color: #fff;
-                        display: flex;
-                    }
-                    
-                    .box-video {
-                        width: 90%;
-                        color: #fff;
-                        display: block;
-                    }
-                    
-                    .video {
-                        margin-top: 20px;
-                    }
-                    
-                    .info {
-                        display: block;
-                        padding: 2%;
-                        flex-wrap: wrap;
-                        justify-content: flex-end;
-                    }
-                    
-                    .info h2 {
-                        text-align: center;
-                        text-transform: uppercase;
-                    }
-                    
-                    hr.solid {
-                        border-top: 1px solid #bbb;
-                        width: 100%;
-                        opacity: 0.2;
-                    }
-                    
-                    .info p {
-                        font-size: 1.2em;
-                        margin: -10px;
-                    }
-                    
-                    .info p strong {
-                        font-size: 900;
-                    }
-                    
-                    .box .img-box {
-                        padding: 2%;
-                    }
-                    
-                    .box .img-box img {
-                        border: 2px solid #5aa897;
-                    }
-                    
-                    .box .img-box .botao i {
-                        padding-right: 20px;
-                    }
-                    
-                    button:focus {
-                        outline: none;
-                        box-shadow: none;
-                    }
-                    
-                    .favorite {
-                        position: relative;
-                        display: inline-block;
-                        width: 300px;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #5aa897;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .favorite i {
-                        padding-right: 20px;
-                        color: #dc3545;
-                    }
-                    
-                    .botoes {
-                        width: 100%;
-                    }
-                    
-                    .botoes div {
-                        margin: 5px;
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #5aa897;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .botoes button i {
-                        color: #fff;
-                    }
-                    
-                    .box .img-box .botao {
-                        border-style: none;
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        width: 300px;
-                        background: #5aa897;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .box .img-box .favorite {
-                        border-style: none;
-                        position: relative;
-                        display: inline-block;
-                        padding: 15px 30px;
-                        margin-top: 20px;
-                        background: #5aa897;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                    }
-                    
-                    .box .img-box .favorite i {
-                        color: #dc3545;
-                    }
-                    
-                    .box .img-box img {
-                        width: 300px;
-                    }
-                    
-                    .info .sinopse {
-                        color: grey;
-                        font-size: 0.9rem;
-                        font-weight: 700;
-                        text-align: justify;
-                        margin-top: 5%;
-                    }
-                    
-                    .sinopse {
-                        color: grey;
-                        font-size: 0.9rem;
-                        font-weight: 700;
-                        text-align: justify;
-                        margin-top: 5%;
-                    }
-                    
-                    .hd {
-                        position: relative;
-                        display: inline-block;
-                        padding: 3px 10px;
-                        margin-top: 20px;
-                        background: #5aa897;
-                        color: #fff;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 0.95em;
-                        font-weight: 700;
-                        cursor: pointer;
-                    }
-                    
-                    .hd:hover {
-                        background: #5eb8a4;
-                    }
-                    
-                    .list-episodes {
-                        width: 100%;
-                        display: block;
-                        justify-content: center;
-                        align-items: center;
-                        height: 50vh;
-                        margin-top: 3%;
-                        margin-left: 5%;
-                    }
-                    
-                    .list-episodes h2 {
-                        width: 90%;
-                        padding-left: 20px;
-                        background-color: #5aa897;
-                        color: #fff;
-                        font-weight: 700;
-                        font-size: 1.2em;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                    }
-                    
-                    .list-episodes h4 {
-                        background-color: #242229;
-                        width: 90%;
-                        margin-top: 0.5%;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        color: grey;
-                        font-size: 1rem;
-                        flex-wrap: wrap;
-                        font-weight: 700;
-                        padding-left: 20px;
-                    }
-                    
-                    .list-episodes a {
-                        color: #5aa897;
-                        text-decoration: none;
-                    }
-                    
-                    .list-episodes a:hover {
-                        font-weight: 700;
-                        color: #5aa897;
-                    }
-                    
-                    .list-episodes div {
-                        background-color: #242229;
-                        width: 90%;
-                        margin-top: 0.5%;
-                        padding-top: 5px;
-                        padding-bottom: 5px;
-                        color: grey;
-                        font-size: 1rem;
-                        flex-wrap: wrap;
-                        font-weight: 700;
-                        padding-left: 20px;
-                    }
-                    
-                    .list-episodes div:hover {
-                        background-color: #37343f;
-                        cursor: pointer;
-                    }
-                    
-                    .box-video h2 {
-                        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                        font-weight: 700;
-                        color: rgba(255, 255, 255, 0.7);
-                        margin-top: 20px;
-                    }
-                    
-                    video {
-                        width: 750px;
-                    }
-                    
-                    video:focus {
-                        outline: none;
-                    }
-                    
-                    @media only screen and (max-device-width: 1300px) {
-                        video {
-                            width: 100%;
-                        }
-                    }
-                    
-                    @media only screen and (max-device-width: 1000px) {
-                        #mainNav .navbar-brand {
-                            font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                            font-weight: 700;
-                            color: rgba(255, 255, 255, 0.7);
-                        }
-                    }
-                    
-                    @media only screen and (max-device-width: 800px) {
-                        .botoes {
-                            display: flex;
-                            place-items: center;
-                            flex-wrap: wrap;
-                        }
-                        .botoes div {
-                            width: 45%;
-                            position: relative;
-                            display: inline-block;
-                            padding: 15px 30px;
-                            margin-top: 20px;
-                            background: #5aa897;
-                            color: #fff;
-                            text-transform: uppercase;
-                            text-decoration: none;
-                            font-size: 0.8em;
-                            font-weight: 700;
-                        }
-                        .video video {
-                            width: 100%;
-                        }
-                        html,
-                        body {
-                            max-width: 100%;
-                            overflow-x: hidden;
-                        }
-                        .box {
-                            display: block;
-                        }
-                        .box .info {
-                            display: block;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                        .info p {
-                            margin-left: auto;
-                            margin-right: auto;
-                            margin-top: 5%;
-                        }
-                        .info .sinopse {
-                            padding-bottom: 5%;
-                        }
-                        .box .img-box {
-                            display: block;
-                            margin-left: auto;
-                            width: 100%;
-                            margin-right: auto;
-                        }
-                        .box .img_box img {
-                            display: block;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                    }
+@font-face {
+    font-family: Hind Siliguri;
+    src: url('../fonts/HindSiliguri-Regular.ttf');
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #131219 !important;
+}
+
+ :root {
+    --plyr-color-main: #5aa897;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+strong {
+    font-family: Hind Siliguri;
+    font-weight: 700;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .plyr {
+        width: 1100px !important;
+        height: 500px;
+    }
+    .botoes {
+        width: 1100px !important;
+    }
+}
+
+.section-animes {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    widows: 100%;
+    background: #131219;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anime-title {
+    background: #191821;
+    width: 100%;
+    margin: 0;
+    padding-left: 2%;
+    color: #C7C7CA;
+    font-weight: 600;
+    font-size: 1.5rem;
+    height: 50px;
+    display: flex;
+    place-items: center;
+    flex-wrap: wrap;
+}
+
+.video {
+    margin-top: 20px;
+}
+
+video {
+    width: 1000px;
+}
+
+.info {
+    display: block;
+    padding: 2%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.info h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.info p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #C7C7CA;
+    margin: -10px;
+}
+
+.info p strong {
+    color: #5A606F;
+}
+
+.box .img-box {
+    padding: 2%;
+}
+
+.box .img-box img {
+    border: 2px solid #5aa897;
+}
+
+.box .img-box .botao i {
+    padding-right: 20px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.favorite {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: #5aa897;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.favorite i {
+    padding-right: 20px;
+    color: #dc3545;
+}
+
+.botoes {
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.botoes .text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botoes .text p {
+    color: #46485a;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 0.8em;
+    font-weight: 900;
+    text-transform: lowercase;
+}
+
+.botoes div {
+    margin: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: #242430;
+    color: #C7C7CA;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.botoes div img {
+    width: 35px;
+    padding-right: 5px;
+}
+
+.box {
+    width: 90%;
+    color: #fff;
+    display: flex;
+}
+
+.box .img-box .botao {
+    border-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    width: 300px;
+    background: #5aa897;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.box .img-box .favorite {
+    border-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: #5aa897;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+.box .img-box .favorite i {
+    color: #dc3545;
+}
+
+.box .img-box img {
+    width: 300px;
+}
+
+.info .sinopse {
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: justify;
+    margin-top: 5%;
+}
+
+.sinopse {
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: justify;
+    margin-top: 5%;
+}
+
+.list-episodes {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.list-episodes h2 {
+    width: 90%;
+    padding-left: 20px;
+    background-color: #5aa897;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list-episodes h4 {
+    background-color: #242229;
+    width: 90%;
+    margin-top: 0.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: grey;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.list-episodes a {
+    color: #5aa897;
+    text-decoration: none;
+}
+
+.list-episodes a:hover {
+    font-weight: 700;
+    color: #5aa897;
+}
+
+.list-episodes div {
+    background-color: #242229;
+    width: 90%;
+    margin-top: 0.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: grey;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.list-episodes div:hover {
+    background-color: #37343f;
+    cursor: pointer;
+}
+
+.box-video h2 {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+video:focus {
+    outline: none;
+}
+
+@media only screen and (max-device-width: 1300px) {
+    video {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #mainNav .navbar-brand {
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media only screen and (max-device-width: 950px) {
+    .section-animes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .botoes .text {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoes div {
+        width: 90%;
+        margin: 5px;
+    }
+    .video video {
+        width: 100%;
+    }
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .box {
+        display: block;
+    }
+    .box .info {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .info .sinopse {
+        padding-bottom: 5%;
+    }
+    .box .img-box {
+        display: block;
+        margin-left: auto;
+        width: 100%;
+        margin-right: auto;
+    }
+    .box .img_box img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anime-title {
+        height: auto;
+    }
+}
