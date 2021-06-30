@@ -117,6 +117,8 @@
         font-style: normal;
         font-weight: 700;
         font-size: 1em;
+        text-align: justify;
+        margin-right: 15px;
     }
     
     .section-home .criadores h2 {
@@ -172,6 +174,11 @@
         text-transform: uppercase;
         color: #C7C7CA;
         font-weight: 900;
+        cursor: pointer;
+    }
+    
+    .section-home .email h2:hover {
+        font-size: 1.55em;
     }
     
     .colas {

@@ -77,7 +77,7 @@
                     </li>
 
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle " href="# " id="navbarScrollingDropdown " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                        <a class="nav-link dropdown-toggle " href="animes.html" id="navbarScrollingDropdown " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
                             Gêneros
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown ">
@@ -96,10 +96,10 @@
                         </ul>
                     </li>
                     <li class="nav-item " style="cursor: pointer ">
-                        <a class="nav-link " onclick="returnFavorites() " ;>Favoritos</a>
+                        <a class="nav-link " href="animes.html" onclick="returnFavorites() " ;>Favoritos</a>
                     </li>
                     <li class="nav-item " style="cursor: pointer ">
-                        <a class="nav-link " onclick="returnHistorico() " ;>Histórico</a>
+                        <a class="nav-link " href="animes.html" onclick="returnHistorico() " ;>Histórico</a>
                     </li>
                 </ul>
 
@@ -200,7 +200,7 @@
                 </div>
 
 
-                <div class="email ">
+                <div class="email " onclick="sendEmail()">
 
                     <h2>Mande um e-mail</h2>
                 </div>
@@ -222,6 +222,11 @@
     </div>
 
     <script>
+        function sendEmail() {
+            window.open('https://mail.google.com/mail/?view=cm&fs=1&to=sammy.staredge@gmail.com');
+
+        }
+
         function openAnimesPage() {
             window.location.href = "animes.html ";
         }
