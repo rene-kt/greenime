@@ -83,7 +83,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/sailor.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('sailor')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('sailor'); changeColorOfHeart()" src="../imgs/heart.png">
 
             </div>
 
@@ -107,13 +108,13 @@
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 0</p>
 
-                <p class="sinopse">
-                    Em Tóquio, Usagi Tsukino é uma garota chorona, comilona e comum. Em um certo dia, no caminho para a escola, ela encontra um grupo de garotos batendo em uma gata de rua. Usagi salva a gata e tira um curativo da testa dela que escondia uma meia-lua. Mais
-                    tarde a gatinha aparece no quarto de Usagi e começa a falar com ela, apresenta-se como Lua e lhe entrega uma missão: a de ser uma Sailor guerreira, defensora do bem, destinada a enfrentar demonios e se unir com outras sailors para
-                    encontrar a Princesa da Lua que habita a terra. Usagi recebe um broche especial que a transforma na guerreira Sailor Moon quando ela grita “Pelo poder do Prisma Lunar”. Sua arma especial é a Tiara Lunar, a qual ela lança dizendo “Tiara
-                    Lunar, ação”. Mais tarde Lua lhe da uma caneta que lhe permite se transformar em qualquer tipo de profissional, basta dizer “poder lunar”
-                </p>
             </div>
+            <p class="sinopse">
+                Em Tóquio, Usagi Tsukino é uma garota chorona, comilona e comum. Em um certo dia, no caminho para a escola, ela encontra um grupo de garotos batendo em uma gata de rua. Usagi salva a gata e tira um curativo da testa dela que escondia uma meia-lua. Mais
+                tarde a gatinha aparece no quarto de Usagi e começa a falar com ela, apresenta-se como Lua e lhe entrega uma missão: a de ser uma Sailor guerreira, defensora do bem, destinada a enfrentar demonios e se unir com outras sailors para encontrar
+                a Princesa da Lua que habita a terra. Usagi recebe um broche especial que a transforma na guerreira Sailor Moon quando ela grita “Pelo poder do Prisma Lunar”. Sua arma especial é a Tiara Lunar, a qual ela lança dizendo “Tiara Lunar, ação”.
+                Mais tarde Lua lhe da uma caneta que lhe permite se transformar em qualquer tipo de profissional, basta dizer “poder lunar”
+            </p>
 
 
 
@@ -127,7 +128,7 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Sailor Moon</h2>
         <h4>
             Os episódios desse anime se encontram indisponíveis no momento. <a href="../animes.html">Procurar outros
                 animes</a>
@@ -139,24 +140,27 @@
 
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('sailor')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('sailor')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
     <script src="js/aos.js "></script>
     <script>

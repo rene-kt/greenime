@@ -78,6 +78,7 @@ strong {
     display: flex;
     place-items: center;
     flex-wrap: wrap;
+    margin-bottom: 2%;
 }
 
 .video {
@@ -90,9 +91,9 @@ video {
 
 .info {
     display: block;
+    width: 77%;
     padding: 2%;
     flex-wrap: wrap;
-    justify-content: flex-end;
     background: #191821;
 }
 
@@ -107,7 +108,7 @@ hr {
 }
 
 .info p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #C7C7CA;
     margin: -10px;
@@ -123,17 +124,13 @@ hr {
 }
 
 .box .img-box img:nth-child(1) {
-    width: 250px !important;
+    width: 200px !important;
 }
 
 .box .img-box img:nth-child(3) {
     width: 30px !important;
     margin-top: 20px;
     cursor: pointer;
-}
-
-.box .img-box .botao i {
-    padding-right: 20px;
 }
 
 button:focus {
@@ -198,9 +195,10 @@ button:focus {
 }
 
 .box {
-    width: 90%;
-    color: #fff;
+    width: 90% !important;
+    background: #191821;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box .img-box .botao {}
@@ -215,23 +213,17 @@ button:focus {
     width: 300px;
 }
 
-.info .sinopse {
+.sinopse {
     background: #242430;
     font-family: Hind Siliguri;
     padding: 15px;
     color: #C7C7CA;
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: justify;
-    margin-top: 5%;
-}
-
-.sinopse {
-    color: grey;
     font-size: 0.9rem;
+    line-height: 30px;
     font-weight: 700;
     text-align: justify;
-    margin-top: 5%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .list-episodes {
@@ -242,6 +234,7 @@ button:focus {
     margin-top: 3%;
     margin-left: 5%;
     background: #191821;
+    margin-bottom: 5%;
 }
 
 .list-episodes h2 {
@@ -365,6 +358,7 @@ video:focus {
         display: block;
     }
     .box .info {
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;

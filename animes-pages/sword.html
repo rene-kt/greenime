@@ -83,7 +83,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/sword.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('sword')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('sword'); changeColorOfHeart()" src="../imgs/heart.png">
 
             </div>
 
@@ -106,12 +107,12 @@
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 1</p>
 
-                <p class="sinopse">
-                    Sword Art Online – Um jovem chamado Kazuto “Kirito” Kirigaya, entra em um MMORPG de realidade virtual, um mundo online chamado de Sword Art Online. Não tem como escapar deste mundo a menos que o jogador complete o jogo; No entanto, um “game over” resulta
-                    na morte no jogador.
-                </p>
             </div>
 
+            <p class="sinopse">
+                Sword Art Online – Um jovem chamado Kazuto “Kirito” Kirigaya, entra em um MMORPG de realidade virtual, um mundo online chamado de Sword Art Online. Não tem como escapar deste mundo a menos que o jogador complete o jogo; No entanto, um “game over” resulta
+                na morte no jogador.
+            </p>
 
 
 
@@ -124,7 +125,7 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Sword Art Online</h2>
         <h4>
             Os episódios desse anime se encontram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
         </h4>
@@ -136,24 +137,27 @@
 
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('sword')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('sword')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
     <script src="js/aos.js "></script>
     <script>

@@ -82,7 +82,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/kaykiu.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('haikyu')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('haikyu'); changeColorOfHeart()" src="../imgs/heart.png">
 
 
             </div>
@@ -106,12 +107,12 @@
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 0</p>
 
-                <p class="sinopse">
-                    Depois de perderem para o Aoba Jousai no intercolegial, o time de voleibol do Colégio Karasuno está se empenhando ao máximo rumo ao torneio de primavera. Por isso, foi decidido que eles irão a Tóquio para um treinamento intensivo de amistosos contra Nekoma
-                    e demais times fortes da região de Touhoku. No meio de um treino de resistência, Hinata e Kageyama acabam correndo mais do que deviam e se perdem, encontrando uma pessoa inesperada no caminho.
-                </p>
             </div>
 
+            <p class="sinopse">
+                Depois de perderem para o Aoba Jousai no intercolegial, o time de voleibol do Colégio Karasuno está se empenhando ao máximo rumo ao torneio de primavera. Por isso, foi decidido que eles irão a Tóquio para um treinamento intensivo de amistosos contra Nekoma
+                e demais times fortes da região de Touhoku. No meio de um treino de resistência, Hinata e Kageyama acabam correndo mais do que deviam e se perdem, encontrando uma pessoa inesperada no caminho.
+            </p>
 
 
 
@@ -124,7 +125,7 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Haikyu!!</h2>
         <h4>
             Os episódios desse anime se encontram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
         </h4>
@@ -133,24 +134,27 @@
 
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('haikyu')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('haikyu')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
     <script src="js/aos.js "></script>
     <script>

@@ -83,7 +83,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/kaguya-sama.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('kaguya')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('kaguya'); changeColorOfHeart()" src="../imgs/heart.png">
 
             </div>
 
@@ -109,13 +110,13 @@
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 0</p>
 
-                <p class="sinopse">
-                    Veio de boa família? Sim! Tem uma personalidade promissora? Sim! Todos os jovens de elite com futuros brilhantes acabam indo parar na Academia Shuchiin. E ambos os líderes do conselho estudantil, Kaguya Shinomiya e Miyuki Shirogane, estão apaixonados
-                    um pelo outro. Mas seis meses se passaram e nada aconteceu?! Ambos são orgulhosos demais para confessar seu amor. Esse orgulho só piorou com o tempo, e agora ambos estão brigando pra ver quem faz o outro se declarar primeiro! A parte
-                    mais divertida do amor é o jogo da conquista! Uma nova comédia romântica, sobre as batalhas intelectuais de dois estudantes de elite apaixonados.
-                </p>
             </div>
 
+            <p class="sinopse">
+                Veio de boa família? Sim! Tem uma personalidade promissora? Sim! Todos os jovens de elite com futuros brilhantes acabam indo parar na Academia Shuchiin. E ambos os líderes do conselho estudantil, Kaguya Shinomiya e Miyuki Shirogane, estão apaixonados
+                um pelo outro. Mas seis meses se passaram e nada aconteceu?! Ambos são orgulhosos demais para confessar seu amor. Esse orgulho só piorou com o tempo, e agora ambos estão brigando pra ver quem faz o outro se declarar primeiro! A parte mais
+                divertida do amor é o jogo da conquista! Uma nova comédia romântica, sobre as batalhas intelectuais de dois estudantes de elite apaixonados.
+            </p>
 
 
 
@@ -128,7 +129,7 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Kaguya Sama: Love is War</h2>
         <h4>
             Os episódios desse anime se encontram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
         </h4>
@@ -136,27 +137,29 @@
     </section>
 
     <!-- Bootstrap core JavaScript -->
-
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('kaguya')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('kaguya')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
     <script src="js/aos.js "></script>
     <script>

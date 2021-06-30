@@ -81,7 +81,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/toradora.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('toradora')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('toradora'); changeColorOfHeart()" src="../imgs/heart.png">
 
             </div>
 
@@ -105,13 +106,13 @@
                 <p><strong>Ovas:</strong> 05</p>
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 0</p>
-
-                <p class="sinopse">
-                    Ryuji é um rapaz que vive sendo mal interpretado por causa do seu olhar ameaçador. Todos pensam que ele é um delinquente juvenil e que a qualquer momento vai atacar alguém. É primavera e em seu primeiro dia no segundo ano no ensino médio ele encontra
-                    uma pequena garota. Aliás, ela é tão baixinha que o apelido da Aisaka Taiga é "Tigre de Bolso". Egoísta e explosiva, quando começa a se debater não há quem consiga pará-la, por isso ela é uma das presenças mais temidas na escola, junto
-                    do Ryuji.
-                </p>
             </div>
+
+            <p class="sinopse">
+                Ryuji é um rapaz que vive sendo mal interpretado por causa do seu olhar ameaçador. Todos pensam que ele é um delinquente juvenil e que a qualquer momento vai atacar alguém. É primavera e em seu primeiro dia no segundo ano no ensino médio ele encontra
+                uma pequena garota. Aliás, ela é tão baixinha que o apelido da Aisaka Taiga é "Tigre de Bolso". Egoísta e explosiva, quando começa a se debater não há quem consiga pará-la, por isso ela é uma das presenças mais temidas na escola, junto
+                do Ryuji.
+            </p>
 
 
 
@@ -125,7 +126,7 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Toradora</h2>
         <h4>
             Os episódios desse anime se encontram indisponíveis no momento. <a href="../animes.html">Procurar outros animes</a>
         </h4>
@@ -134,26 +135,30 @@
 
     <!-- Bootstrap core JavaScript -->
 
+
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('toradora')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('toradora')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
     <script src="js/aos.js "></script>
     <script>

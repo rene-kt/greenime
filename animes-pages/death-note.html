@@ -84,7 +84,8 @@
             <div class="img-box">
 
                 <img class="" src="../imgs/animes-cards/death-note.jpg">
-                <img id="heart" onclick="addAndRemoveFavorites('death-note')" src="../imgs/heart.png">
+                <br>
+                <img id="heart" onclick="addAndRemoveFavorites('death-note'); changeColorOfHeart()" src="../imgs/heart.png">
 
 
             </div>
@@ -109,14 +110,14 @@
                 <p><strong>Ovas:</strong> 0</p>
                 <hr class="solid">
                 <p><strong>Filmes:</strong> 02</p>
-
-                <p class="sinopse">
-                    Yagami Light é um gênio de 17 anos de idade que está cansado de sua vida escolar, e do estado do mundo em que vive. Um dia, a caminho de casa, a Light se depara com um caderno escuro, com “Death Note” escrito na frente. Intrigado por sua aparência, Light
-                    lê as primeiras frases, apenas para descobrir que ele afirma que qualquer pessoa cujo nome está escrito dentro vai morrer. Yagami descarta-o como uma piada, continuando suas atividades diárias. Porém, logo depois a curiosidade humana
-                    o leva a testar o caderno e descobrir a verdade por trás da primeira frase. Agora, com o poder em suas mãos, Yagami Light está em uma missão para mudar o mundo e tornar-se Deus do Novo Mundo.
-                </p>
             </div>
 
+
+            <p class="sinopse">
+                Yagami Light é um gênio de 17 anos de idade que está cansado de sua vida escolar, e do estado do mundo em que vive. Um dia, a caminho de casa, a Light se depara com um caderno escuro, com “Death Note” escrito na frente. Intrigado por sua aparência, Light
+                lê as primeiras frases, apenas para descobrir que ele afirma que qualquer pessoa cujo nome está escrito dentro vai morrer. Yagami descarta-o como uma piada, continuando suas atividades diárias. Porém, logo depois a curiosidade humana o
+                leva a testar o caderno e descobrir a verdade por trás da primeira frase. Agora, com o poder em suas mãos, Yagami Light está em uma missão para mudar o mundo e tornar-se Deus do Novo Mundo.
+            </p>
 
 
 
@@ -129,16 +130,40 @@
 
     <section class="list-episodes" id="episodes">
 
-        <h2>Lista de episódios</h2>
+        <h2>Lista de episódios - Death Note</h2>
 
-        <a href="../animes-episodes/death-note/1.html">
+        <a href="animes-episodes/death-note/1.html">
 
             <div>
                 Death Note - Episódio 1 - Renascer
             </div>
         </a>
 
+        <a href="animes-episodes/death-note/2.html">
 
+            <div>
+                Death Note - Episódio 2 - Confronto
+            </div>
+        </a>
+
+        <a href="animes-episodes/death-note/3.html">
+            <div>
+                Death Note - Episódio 3 - Acordo
+            </div>
+        </a>
+
+        <a href="animes-episodes/death-note/4.html">
+            <div>
+                Death Note - Episódio 4 - Perseguição
+            </div>
+        </a>
+
+        <a href="animes-episodes/death-note/5.html">
+
+            <div>
+                Death Note - Episódio 5 - Diplomacia
+            </div>
+        </a>
 
 
 
@@ -146,28 +171,31 @@
     </section>
 
     <!-- Bootstrap core JavaScript -->
-
     <script>
         function changeColorOfHeart() {
-            if (document.getElementById('button').classList.contains('favorite')) {
+            if (document.getElementById('heart').classList.contains('favorite')) {
 
-                document.getElementById('button').classList.remove('favorite');
-                document.getElementById('button').classList.add('botao');
+                document.getElementById('heart').classList.remove('favorite');
+                document.getElementById('heart').src = "../imgs/heart.png";
+                document.getElementById('heart').classList.add('botao');
 
 
 
 
             } else {
-                document.getElementById('button').classList.remove('botao');
-                document.getElementById('button').classList.add('favorite');
+                document.getElementById('heart').classList.remove('botao');
+                document.getElementById('heart').src = "../imgs/red-heart.png";
+                document.getElementById('heart').classList.add('favorite');
             }
 
         }
     </script>
 
     <script type="module">
-        if (JSON.parse(localStorage.getItem('favorites')).includes('death-note')) { document.getElementById('button').classList.remove('botao'); document.getElementById('button').classList.add('favorite'); }
+        if (JSON.parse(localStorage.getItem('favorites')).includes('death-note')) { document.getElementById('heart').classList.remove('botao'); document.getElementById('heart').src = "../imgs/red-heart.png"; document.getElementById('heart').classList.add('favorite');
+        }
     </script>
+
     <script src="js/aos.js "></script>
     <script>
     </script>
