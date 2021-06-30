@@ -103,26 +103,10 @@
                     font-weight: 700 !important;
                 }
                 
-                .botao {
-                    border-style: none;
-                    position: relative;
-                    display: inline-block;
-                    padding: 15px 30px;
-                    width: 300px;
-                    margin-top: 20px;
-                    background: #5aa897;
-                    color: #fff;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    font-size: 0.95em;
-                    font-weight: 700;
-                }
-                
                 .list-episodes {
                     width: 100%;
                     justify-content: center;
                     align-items: center;
-                    height: 50vh;
                     margin-top: 3%;
                     margin-left: 5%;
                 }
@@ -149,10 +133,9 @@
                 .list-episodes h4 {
                     background-color: #242229;
                     width: 90%;
-                    margin-top: 0.5%;
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    color: grey;
+                    color: #C7C7CA;
                     font-size: 1rem;
                     flex-wrap: wrap;
                     font-weight: 700;

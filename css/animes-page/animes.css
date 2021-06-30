@@ -1,6 +1,6 @@
 @font-face {
     font-family: Hind Siliguri;
-    src: url('../fonts/HindSiliguri-Regular.ttf');
+    src: url('../../fonts/HindSiliguri-Regular.ttf');
 }
 
 body {
@@ -93,6 +93,7 @@ video {
     padding: 2%;
     flex-wrap: wrap;
     justify-content: flex-end;
+    background: #191821;
 }
 
 .info h2 {
@@ -100,10 +101,9 @@ video {
     text-transform: uppercase;
 }
 
-hr.solid {
-    border-top: 1px solid #bbb;
-    width: 100%;
-    opacity: 0.2;
+hr {
+    color: rgb(0, 0, 0) !important;
+    height: 2px !important;
 }
 
 .info p {
@@ -118,11 +118,18 @@ hr.solid {
 }
 
 .box .img-box {
+    background: #191821;
     padding: 2%;
 }
 
-.box .img-box img {
-    border: 2px solid #5aa897;
+.box .img-box img:nth-child(1) {
+    width: 250px !important;
+}
+
+.box .img-box img:nth-child(3) {
+    width: 30px !important;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .box .img-box .botao i {
@@ -134,19 +141,7 @@ button:focus {
     box-shadow: none;
 }
 
-.favorite {
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    padding: 15px 30px;
-    margin-top: 20px;
-    background: #5aa897;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.95em;
-    font-weight: 700;
-}
+.favorite {}
 
 .favorite i {
     padding-right: 20px;
@@ -208,33 +203,9 @@ button:focus {
     display: flex;
 }
 
-.box .img-box .botao {
-    border-style: none;
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    width: 300px;
-    background: #5aa897;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.95em;
-    font-weight: 700;
-}
+.box .img-box .botao {}
 
-.box .img-box .favorite {
-    border-style: none;
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    margin-top: 20px;
-    background: #5aa897;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.95em;
-    font-weight: 700;
-}
+.box .img-box .favorite {}
 
 .box .img-box .favorite i {
     color: #dc3545;
@@ -245,8 +216,11 @@ button:focus {
 }
 
 .info .sinopse {
-    color: grey;
-    font-size: 0.9rem;
+    background: #242430;
+    font-family: Hind Siliguri;
+    padding: 15px;
+    color: #C7C7CA;
+    font-size: 1rem;
     font-weight: 700;
     text-align: justify;
     margin-top: 5%;
@@ -261,20 +235,22 @@ button:focus {
 }
 
 .list-episodes {
-    width: 100%;
+    width: 90%;
     display: block;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     margin-top: 3%;
     margin-left: 5%;
+    background: #191821;
 }
 
 .list-episodes h2 {
-    width: 90%;
+    width: 100%;
     padding-left: 20px;
     background-color: #5aa897;
-    color: #fff;
+    font-family: Hind Siliguri;
+    color: #C7C7CA;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.2em;
     padding-top: 5px;
@@ -283,11 +259,13 @@ button:focus {
 
 .list-episodes h4 {
     background-color: #242229;
-    width: 90%;
-    margin-top: 0.5%;
+    font-family: Hind Siliguri;
+    width: 100%;
+    margin-top: 1%;
+    padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: grey;
+    color: #C7C7CA;
     font-size: 1rem;
     flex-wrap: wrap;
     font-weight: 700;
@@ -306,14 +284,15 @@ button:focus {
 
 .list-episodes div {
     background-color: #242229;
-    width: 90%;
-    margin-top: 0.5%;
+    width: 100%;
+    margin-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: grey;
+    font-family: Hind Siliguri;
+    color: #C7C7CA;
     font-size: 1rem;
     flex-wrap: wrap;
-    font-weight: 700;
+    font-weight: 500;
     padding-left: 20px;
 }
 
@@ -348,6 +327,9 @@ video:focus {
 }
 
 @media only screen and (max-device-width: 950px) {
+    .img-box {
+        display: block;
+    }
     .section-animes {
         display: flex;
         justify-content: center;
