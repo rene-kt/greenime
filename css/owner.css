@@ -305,12 +305,9 @@
                 }
                 
                 .card-animes .sinopse p {
-                    margin-left: 20px;
-                    margin-right: 20px;
                     text-align: justify;
-                    color: white;
-                    font-size: 15px;
-                    font-weight: 700;
+                    margin-right: 15px;
+                    margin-left: 15px;
                 }
                 
                 .favorite .heart i {
