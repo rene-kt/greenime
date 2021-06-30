@@ -139,7 +139,7 @@
     <!-- Cover da página -->
 
 
-    <div style="margin-top: 5%" class="list-episodes" id="episodes-section">
+    <div style="margin-top: 10%" class="list-episodes" id="episodes-section">
     </div>
 
 
@@ -710,7 +710,7 @@
 
 
 
-    <div class="bottom-bar ">
+    <div class="bottom-bar " id="bottom-bar">
 
         <a href="index.html">
             <h3> <img style="width: 20px; margin-right: 5px" src="imgs/info.png"> Sobre nós</h3>
@@ -720,6 +720,8 @@
         </a>
         <h3 onclick="sendEmail();"> Mande um email</h3>
     </div>
+
+    <hr>
 
 
 
@@ -751,6 +753,9 @@
             var historico = JSON.parse(localStorage.getItem('historico')) || [];
 
             var section = document.getElementById('episodes-section');
+
+            var bottom = document.getElementById('bottom-bar');
+            bottom.style.display = 'none';
 
 
 
@@ -841,6 +846,10 @@
             var section = document.getElementById('episodes-section');
             section.style.display = 'none';
 
+            var bottom = document.getElementById('bottom-bar');
+            bottom.style.display = 'flex';
+
+
 
             favoritesnav = document.getElementById('favoritesnav');
             favoritesnav.classList.remove("navactive");
@@ -923,7 +932,10 @@
 
 
 
-    <!-- Custom scripts for this template -->
+
+</body>
+
+</html>
 
 </body>
 
