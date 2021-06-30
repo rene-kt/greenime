@@ -20,6 +20,23 @@
                     color: #ffffff;
                 }
                 
+                .dropdown-menu {
+                    background: #303140 !important;
+                    font-weight: bold !important;
+                }
+                
+                .dropdown-item {
+                    background: #303140 !important;
+                    color: #131219 !important;
+                    text-transform: capitalize;
+                    font-size: 1.3em !important;
+                    font-weight: 1000!important;
+                }
+                
+                .dropdown-item:hover {
+                    background-color: #5aa897 !important;
+                }
+                
                 li {
                     list-style: none;
                 }
@@ -447,7 +464,7 @@
                     font-family: Hind Siliguri;
                     color: #C7C7CA;
                     font-weight: bold;
-                    background: #2b303b;
+                    background: #303140;
                     border: none;
                     font-size: 1.2em;
                     width: 30vw;
