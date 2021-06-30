@@ -63,7 +63,7 @@
 
 <body>
 
-    <nav style="background: #242430 !important;" class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <nav style="background: #242430 !important;" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="mainNav">
         <div class="container-fluid">
             <a class="navbar-brand js-scroll-trigger" href="#home"> <img id="image-id" class="logo-img img-fluid" style="width: 30px;  " src="imgs/logo.png"> GREENIME</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,8 +109,11 @@
                     <li class="nav-item" style="cursor: pointer">
                         <a class="nav-link" onclick="returnFavorites()" id="favoritesnav" ;>Favoritos</a>
                     </li>
-                    <li class="nav-item" style="cursor: pointer">
+                    <li class="nav-item" style="cursor: pointer" style="padding-right: 16px !important">
                         <a class="nav-link" onclick="returnHistorico()" id="historiconav" ;>Histórico</a>
+                    </li>
+                    <li class="nav-item" style="cursor: pointer" style="padding-right: 16px !important">
+                        <a class="nav-link" onclick="returnHistorico()" id="histordsadaiconav" ;></a>
                     </li>
                 </ul>
                 <li class="box container-1 d-flex">
@@ -130,7 +133,7 @@
     <!-- Cover da página -->
 
 
-    <div class="list-episodes" id="episodes-section">
+    <div style="margin-top: 10%" class="list-episodes" id="episodes-section">
     </div>
 
 

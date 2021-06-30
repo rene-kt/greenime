@@ -11,8 +11,13 @@
     
     .navactive {
         border-bottom: 3px solid #5aa897;
-        transition-duration: 0.6s;
-        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .nav-link {
+        height: 40px !important;
+        margin-top: 20px;
+        font-family: Hind Siliguri !important;
+        font-size: 1rem;
     }
     
     .navbar-brand {
@@ -53,6 +58,7 @@
     .section-home {
         background: #15141C;
         width: 65%;
+        margin-top: 5%;
         color: #fff;
         display: flex;
     }
@@ -182,6 +188,7 @@
     }
     
     .colas {
+        margin-top: 5%;
         width: 35%;
         max-height: 155vh;
     }
