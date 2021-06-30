@@ -206,7 +206,7 @@
         opacity: 0.1;
         background-repeat: repeat;
         transition: 1.5s;
-        margin-top: -10px;
+        margin-top: -5px;
     }
     
     @media only screen and (max-device-width: 600px) {

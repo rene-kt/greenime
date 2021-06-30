@@ -126,6 +126,7 @@ hr {
 .box .img-box {
     background: #191821;
     padding: 2%;
+    margin-left: 10px;
 }
 
 .box .img-box img:nth-child(1) {
