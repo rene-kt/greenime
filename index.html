@@ -58,6 +58,11 @@
             text-transform: uppercase;
             font-weight: 700;
         }
+        
+        .navbar-brand {
+            color: #5aa897!important;
+            font-size: 18px;
+        }
     </style>
 </head>
 
@@ -65,7 +70,7 @@
 
     <nav style="background: #242430 !important;" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand nav-item js-scroll-trigger" href="#"> <img id="image-id" class="logo-img img-fluid" style="width: 40px;  " src="imgs/logo.png"> GREENIME</a>
+            <a class="navbar-brand nav-item js-scroll-trigger" href="#"> <img id="image-id" class="logo-img img-fluid" src="imgs/logo.png"> GREENIME</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -105,7 +110,13 @@
                     <li class="nav-item " style="cursor: pointer ">
                         <a></a>
                     </li>
+
                 </ul>
+
+                <li class="box container-1 d-flex">
+
+                    <input class="" id="search" onkeyup="search()" placeholder="O que você deseja assistir agora? :)">
+                </li>
 
             </div>
         </div>

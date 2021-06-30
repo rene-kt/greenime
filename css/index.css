@@ -13,25 +13,32 @@
         border-bottom: 3px solid #5aa897;
     }
     
+    .navbar-brand img {
+        width: 40px !important;
+    }
+    
+    #search {
+        height: 6vh;
+        font-family: Hind Siliguri;
+        color: #C7C7CA;
+        font-weight: bold;
+        background: #303140;
+        border: none;
+        font-size: 1.1rem;
+        width: 30vw;
+        padding-left: 45px;
+        float: right;
+    }
+    
     .nav-link {
         height: 40px !important;
         margin-top: 10px;
         font-family: Hind Siliguri !important;
-        font-size: 1rem;
-    }
-    
-    .navbar-brand {
-        font-size: 1.1rem!important;
-        color: #5aa897 !important;
     }
     
     .nav-link {
         height: 40px !important;
         margin-top: 10px;
-    }
-    
-    .navbar-brand img {
-        width: 30px !important;
     }
     
      ::selection {
@@ -75,7 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px;
+        margin-top: 10px;
     }
     
     .section-home .title img {
@@ -95,7 +102,7 @@
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.4em;
+        font-size: 1.3em;
         color: #5aa897;
         font-weight: 900;
     }
@@ -111,7 +118,7 @@
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.4em;
         text-transform: uppercase;
         color: #C7C7CA;
         font-weight: 900;
@@ -147,14 +154,14 @@
     
     .section-home .members div {
         margin-right: 45px;
-        width: 180px;
+        width: 170px;
     }
     
     .section-home .members h3 {
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 0.9em;
         text-transform: uppercase;
         color: #C7C7CA;
         font-weight: 900;

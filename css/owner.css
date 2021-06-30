@@ -23,6 +23,8 @@
                 .dropdown-menu {
                     background: #303140 !important;
                     font-weight: bold !important;
+                    max-height: 350px;
+                    overflow: auto;
                 }
                 
                 .dropdown-item {
@@ -41,16 +43,14 @@
                     list-style: none;
                 }
                 
-                .navbar-brand {
-                    font-size: 1.1rem!important;
-                    color: #5aa897 !important;
+                .nav-link {
+                    height: 40px !important;
+                    font-family: Hind Siliguri !important;
                 }
                 
                 .nav-link {
                     height: 40px !important;
-                    margin-top: 20px;
-                    font-family: Hind Siliguri !important;
-                    font-size: 1rem;
+                    margin-top: 10px;
                 }
                 
                 .navactive {
@@ -58,7 +58,7 @@
                 }
                 
                 .navbar-brand img {
-                    width: 30px !important;
+                    width: 40px !important;
                 }
                 
                 h1,
@@ -82,12 +82,13 @@
                 
                 .bottom-bar {
                     display: flex;
-                    width: 95%;
+                    width: 90%;
                     background: #191821;
                     text-align: left;
                     margin: auto;
                     color: #fff;
                     padding: 15px 20px;
+                    margin-bottom: 20px !important;
                 }
                 
                 .bottom-bar-fixed {
@@ -123,12 +124,6 @@
                 
                 .bottom-bar .container {
                     margin: 0 auto;
-                }
-                
-                .nav-item {
-                    text-transform: uppercase !important;
-                    font-weight: 700 !important;
-                    width: auto;
                 }
                 
                 .list-episodes {
@@ -245,9 +240,8 @@
                     align-items: center;
                     justify-content: center;
                     background-color: #131219;
-                    overflow: hidden;
                     flex-wrap: wrap;
-                    margin-top: 10%;
+                    margin-top: 5%;
                 }
                 
                 .hide {
@@ -278,7 +272,7 @@
                     display: grid;
                     position: relative;
                     grid-template-columns: 350px;
-                    grid-template-rows: 400px 150px 70px;
+                    grid-template-rows: 400px 150px 50px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 5px;
                     background: #15141B;
@@ -349,11 +343,6 @@
                     height: 50px;
                 }
                 
-                .card-animes-stats:hover h5 {
-                    color: #fff;
-                    font-weight: 700;
-                }
-                
                 .card-animes a {
                     text-decoration: none;
                 }
@@ -365,10 +354,6 @@
                     justify-content: center;
                     flex-direction: column;
                     color: white;
-                }
-                
-                .card-animes-stats .stat:hover h5 {
-                    color: #fff;
                 }
                 
                 .card-animes-stats .stat h5 {
@@ -480,18 +465,7 @@
                     float: right;
                 }
                 
-                @media only screen and (max-device-width: 1000px) {
-                    #mainNav .navbar-brand {
-                        font-family: Hind Siliguri;
-                        font-weight: 700;
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-                
                 @media only screen and (max-device-width: 800px) {
-                    .bottom-bar {
-                        display: none;
-                    }
                     #search {
                         height: 6vh;
                         background: #2b303b;
