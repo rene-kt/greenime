@@ -68,6 +68,7 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .anime-title {
@@ -332,6 +333,7 @@ video:focus {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 10%;
     }
     .botoes {
         display: flex;

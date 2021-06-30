@@ -509,6 +509,7 @@
                         margin-left: auto;
                         margin-right: auto;
                         width: 100%;
+                        margin-top: 30%;
                     }
                     .card-animes {
                         display: grid;

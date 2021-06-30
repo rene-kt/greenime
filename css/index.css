@@ -15,7 +15,7 @@
     
     .nav-link {
         height: 40px !important;
-        margin-top: 20px;
+        margin-top: 10px;
         font-family: Hind Siliguri !important;
         font-size: 1rem;
     }
@@ -27,7 +27,7 @@
     
     .nav-link {
         height: 40px !important;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .navbar-brand img {
@@ -61,6 +61,7 @@
         margin-top: 5%;
         color: #fff;
         display: flex;
+        height: 920px;
     }
     
     .section-home .info {
@@ -71,7 +72,6 @@
     }
     
     .section-home .title {
-        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -87,7 +87,7 @@
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.4em;
         color: #C7C7CA;
     }
     
@@ -95,15 +95,15 @@
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.4em;
         color: #5aa897;
         font-weight: 900;
     }
     
     .section-home .about {
-        margin-top: 20px;
         margin-left: 50px;
         display: block;
+        width: 90%;
         padding: 5px;
     }
     
@@ -122,18 +122,17 @@
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 0.9em;
         text-align: justify;
         margin-right: 15px;
     }
     
     .section-home .criadores h2 {
-        margin-top: 20px;
         margin-left: 50px;
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-transform: uppercase;
         color: #C7C7CA;
         font-weight: 900;
@@ -148,7 +147,7 @@
     
     .section-home .members div {
         margin-right: 45px;
-        width: 200px;
+        width: 180px;
     }
     
     .section-home .members h3 {
@@ -162,21 +161,20 @@
     }
     
     .section-home .members .foto {
-        width: 100px;
+        width: 80px;
         margin-bottom: 20px;
     }
     
     .section-home .members .instagram {
-        width: 40px;
+        width: 30px;
     }
     
     .section-home .email h2 {
         margin-left: 50px;
-        margin-bottom: 10px;
         font-family: Hind Siliguri;
         font-style: normal;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-transform: uppercase;
         color: #C7C7CA;
         font-weight: 900;
@@ -184,11 +182,12 @@
     }
     
     .section-home .email h2:hover {
-        font-size: 1.55em;
+        font-size: 1.35em;
     }
     
     .colas {
         margin-top: 5%;
+        margin-left: 1.5%;
         width: 35%;
         max-height: 155vh;
     }
@@ -211,6 +210,14 @@
     }
     
     @media only screen and (max-device-width: 600px) {
+        .section-home {
+            background: #15141C;
+            width: 65%;
+            margin-top: 30%;
+            color: #fff;
+            display: flex;
+            height: auto;
+        }
         .section-home {
             width: 100%;
             color: #fff;
