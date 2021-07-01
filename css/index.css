@@ -20,25 +20,20 @@
     #search {
         height: 6vh;
         font-family: Hind Siliguri;
-        color: #C7C7CA;
-        font-weight: bold;
+        color: #5A606F;
+        font-weight: 900;
         background: #303140;
         border: none;
         font-size: 1rem;
         width: 30vw;
-        padding-left: 45px;
+        padding-left: 30px;
         float: right;
     }
     
     .nav-link {
         height: 40px !important;
-        margin-top: 10px;
+        margin-top: 15px;
         font-family: Hind Siliguri !important;
-    }
-    
-    .nav-link {
-        height: 40px !important;
-        margin-top: 10px;
     }
     
      ::selection {
@@ -57,8 +52,9 @@
     }
     
     .section-home .info .divider {
-        margin: 5%;
         height: 3px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         background: #131219;
     }
     
@@ -82,7 +78,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 35px;
     }
     
     .section-home .title img {
@@ -109,7 +105,7 @@
     
     .section-home .about {
         margin-left: 50px;
-        margin-top: -50px;
+        margin-top: -40px;
         display: block;
         width: 90%;
         padding: 5px;
@@ -136,7 +132,7 @@
     }
     
     .section-home .criadores h2 {
-        margin-top: -60px;
+        margin-top: -40px;
         margin-left: 50px;
         font-family: Hind Siliguri;
         font-style: normal;

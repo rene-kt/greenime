@@ -45,12 +45,8 @@
                 
                 .nav-link {
                     height: 40px !important;
+                    margin-top: 15px;
                     font-family: Hind Siliguri !important;
-                }
-                
-                .nav-link {
-                    height: 40px !important;
-                    margin-top: 10px;
                 }
                 
                 .navactive {
@@ -130,7 +126,6 @@
                     width: 100%;
                     justify-content: center;
                     align-items: center;
-                    margin-top: 3%;
                     margin-left: 5%;
                 }
                 
@@ -179,15 +174,13 @@
                     background-color: #242430;
                     color: #C7C7CA;
                     font-family: Hind Siliguri;
-                    font-size: 1.3em;
-                    font-weight: 600;
+                    font-size: 1.1em;
                     width: 90%;
                     margin-top: 0.5%;
                     padding-top: 5px;
                     padding-bottom: 5px;
-                    color: grey;
+                    color: #C7C7CA;
                     flex-wrap: wrap;
-                    font-weight: 700;
                     padding-left: 20px;
                     display: flex;
                     justify-content: space-between;
@@ -331,6 +324,7 @@
                     grid-area: text;
                     display: block;
                     margin-top: 15px;
+                    margin: auto !important;
                 }
                 
                 .card-animes-text:nth-child(2) {
@@ -354,8 +348,9 @@
                 }
                 
                 .card-animes-stats .stat {
-                    margin-top: 5px;
+                    margin-top: 10px;
                     display: flex;
+                    font-weight: 800;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
@@ -365,6 +360,7 @@
                 .card-animes-stats .stat h5 {
                     font-size: 1.5em;
                     letter-spacing: 1px;
+                    font-weight: 800;
                     color: #191821;
                     font-weight: 700;
                 }
@@ -372,6 +368,11 @@
                 .card-animes-stats .stat i {
                     font-size: 1em;
                     padding-right: 10px;
+                    font-weight: 800;
+                }
+                
+                .card-animes-stats .stat h5:hover {
+                    color: #fff;
                 }
                 
                 .card-animes-stats .stat:nth-child(1) {
@@ -411,11 +412,12 @@
                 .tecnology {
                     color: #5A606F;
                     font-weight: 500;
-                    font-size: 0.92em;
+                    font-size: 0.9em;
+                    font-weight: 700;
                     text-transform: uppercase;
                     font-family: Hind Siliguri;
-                    text-align: center;
-                    margin: 10px;
+                    text-align: center !important;
+                    width: 90%;
                 }
                 
                 .tecnology span {
@@ -466,13 +468,13 @@
                 #search {
                     height: 6vh;
                     font-family: Hind Siliguri;
-                    color: #C7C7CA;
-                    font-weight: bold;
+                    color: #5A606F;
+                    font-weight: 900;
                     background: #303140;
                     border: none;
                     font-size: 1rem;
                     width: 30vw;
-                    padding-left: 45px;
+                    padding-left: 30px;
                     float: right;
                 }
                 
@@ -512,7 +514,8 @@
                         color: white;
                     }
                     .card-animes-text {
-                        margin: auto 0;
+                        margin: auto;
+                        text-align: center !important;
                     }
                     .card-animes .sinopse:hover {
                         opacity: 0.8;
