@@ -24,7 +24,7 @@
         font-weight: bold;
         background: #303140;
         border: none;
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 30vw;
         padding-left: 45px;
         float: right;
@@ -68,7 +68,7 @@
         margin-top: 5%;
         color: #fff;
         display: flex;
-        height: 920px;
+        height: 890px;
     }
     
     .section-home .info {
@@ -87,7 +87,7 @@
     
     .section-home .title img {
         width: 200px;
-        margin-right: 30px;
+        margin-right: 5px;
     }
     
     .section-home .title {
@@ -109,6 +109,7 @@
     
     .section-home .about {
         margin-left: 50px;
+        margin-top: -50px;
         display: block;
         width: 90%;
         padding: 5px;
@@ -135,6 +136,7 @@
     }
     
     .section-home .criadores h2 {
+        margin-top: -60px;
         margin-left: 50px;
         font-family: Hind Siliguri;
         font-style: normal;

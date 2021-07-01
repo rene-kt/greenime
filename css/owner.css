@@ -23,7 +23,7 @@
                 .dropdown-menu {
                     background: #303140 !important;
                     font-weight: bold !important;
-                    max-height: 350px;
+                    max-height: 370px;
                     overflow: auto;
                 }
                 
@@ -271,11 +271,11 @@
                 .card-animes {
                     display: grid;
                     position: relative;
-                    grid-template-columns: 350px;
-                    grid-template-rows: 400px 150px 50px;
+                    grid-template-columns: 370px;
+                    grid-template-rows: 400px 130px 50px;
                     grid-template-areas: "image""text""stats";
                     border-radius: 5px;
-                    background: #15141B;
+                    background: #191821;
                     text-align: center;
                     transition: 0.2s ease;
                     cursor: pointer;
@@ -295,7 +295,7 @@
                     transition-duration: 0.7s;
                     display: none;
                     height: 400px;
-                    width: 350px;
+                    width: 370px;
                     background: #15141B;
                     opacity: 0;
                     display: flex;
@@ -329,7 +329,13 @@
                 
                 .card-animes-text {
                     grid-area: text;
+                    display: block;
                     margin-top: 15px;
+                }
+                
+                .card-animes-text:nth-child(2) {
+                    margin-right: 10px;
+                    margin-top: 5px;
                 }
                 
                 .card-animes-stats {
@@ -404,11 +410,16 @@
                 
                 .tecnology {
                     color: #5A606F;
-                    margin: auto;
                     font-weight: 500;
                     font-size: 0.92em;
                     text-transform: uppercase;
                     font-family: Hind Siliguri;
+                    text-align: center;
+                    margin: 10px;
+                }
+                
+                .tecnology span {
+                    width: 100px !important;
                 }
                 
                 .card-animes-text p {
@@ -459,7 +470,7 @@
                     font-weight: bold;
                     background: #303140;
                     border: none;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     width: 30vw;
                     padding-left: 45px;
                     float: right;
@@ -501,7 +512,6 @@
                         color: white;
                     }
                     .card-animes-text {
-                        grid-area: text;
                         margin: auto 0;
                     }
                     .card-animes .sinopse:hover {
